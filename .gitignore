@@ -83,3 +83,5 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+ssh-keygen -t ed25519 -C mashkovjob@yandex.ru
+ssh-keygen -t ed25519 -C mashkovjob@yandex.ru.pub

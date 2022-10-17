@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		209FFD1ADE0222B249D77C70 /* Pods_Loopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBBAC4AD92D2A274FB05D34 /* Pods_Loopy.framework */; };
 		417BE81F28F2DD1D00EC1C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */; };
+		41B4A79B28FDA2B400E553D3 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */; };
+		41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */; };
+		41B4A7A028FDB20F00E553D3 /* TabBarCustomizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79F28FDB20F00E553D3 /* TabBarCustomizator.swift */; };
+		41B4A7A228FDB62A00E553D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B4A7A128FDB62A00E553D3 /* Colors.xcassets */; };
+		41B4A7A528FDC15D00E553D3 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A7A428FDC15D00E553D3 /* UIColor+hex.swift */; };
+		41B4A7A828FDC24800E553D3 /* ColorsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A7A728FDC24800E553D3 /* ColorsConfig.swift */; };
 		41C2EF7528F2FE4D005DDB5B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C2EF7428F2FE4D005DDB5B /* AppCoordinator.swift */; };
 		41C2EF7A28F30103005DDB5B /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C2EF7928F30103005DDB5B /* Coordinatable.swift */; };
 		41C2EF7C28F30430005DDB5B /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C2EF7B28F30430005DDB5B /* Routable.swift */; };
@@ -33,7 +39,7 @@
 		41F2276C28F2D85400856D7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2276B28F2D85400856D7E /* AppDelegate.swift */; };
 		41F2276E28F2D85400856D7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2276D28F2D85400856D7E /* SceneDelegate.swift */; };
 		41F2277628F2D85400856D7E /* Loopy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41F2277428F2D85400856D7E /* Loopy.xcdatamodeld */; };
-		41F2277828F2D85800856D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F2277728F2D85800856D7E /* Assets.xcassets */; };
+		41F2277828F2D85800856D7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F2277728F2D85800856D7E /* Images.xcassets */; };
 		41F2277B28F2D85800856D7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F2277928F2D85800856D7E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,12 @@
 		1EBBAC4AD92D2A274FB05D34 /* Pods_Loopy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loopy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBA923C331C75A308F20450 /* Pods-Loopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loopy.debug.xcconfig"; path = "Target Support Files/Pods-Loopy/Pods-Loopy.debug.xcconfig"; sourceTree = "<group>"; };
 		417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
+		41B4A79F28FDB20F00E553D3 /* TabBarCustomizator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustomizator.swift; sourceTree = "<group>"; };
+		41B4A7A128FDB62A00E553D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		41B4A7A428FDC15D00E553D3 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		41B4A7A728FDC24800E553D3 /* ColorsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsConfig.swift; sourceTree = "<group>"; };
 		41C2EF7428F2FE4D005DDB5B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		41C2EF7928F30103005DDB5B /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
 		41C2EF7B28F30430005DDB5B /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
@@ -66,7 +78,7 @@
 		41F2276B28F2D85400856D7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41F2276D28F2D85400856D7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		41F2277528F2D85400856D7E /* Loopy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Loopy.xcdatamodel; sourceTree = "<group>"; };
-		41F2277728F2D85800856D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41F2277728F2D85800856D7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		41F2277A28F2D85800856D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41F2277C28F2D85800856D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88C19348CF9D0B0F87CF46CD /* Pods-Loopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loopy.release.xcconfig"; path = "Target Support Files/Pods-Loopy/Pods-Loopy.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +96,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41B4A79828FDA26F00E553D3 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				41B4A79928FDA28E00E553D3 /* Configuration */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		41B4A79928FDA28E00E553D3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */,
+				41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */,
+				41B4A79F28FDB20F00E553D3 /* TabBarCustomizator.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		41B4A7A328FDC14D00E553D3 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				41B4A7A428FDC15D00E553D3 /* UIColor+hex.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		41C2EF7128F2FDDC005DDB5B /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +136,9 @@
 		41C2EF7228F2FDE3005DDB5B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				41F2277728F2D85800856D7E /* Assets.xcassets */,
+				41F2277728F2D85800856D7E /* Images.xcassets */,
+				41B4A7A128FDB62A00E553D3 /* Colors.xcassets */,
+				41B4A7A728FDC24800E553D3 /* ColorsConfig.swift */,
 				41F2277428F2D85400856D7E /* Loopy.xcdatamodeld */,
 				41F2277C28F2D85800856D7E /* Info.plist */,
 				417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */,
@@ -109,6 +149,7 @@
 		41C2EF7328F2FE2C005DDB5B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				41B4A79828FDA26F00E553D3 /* TabBar */,
 				41C2EF8228F31331005DDB5B /* Profile */,
 			);
 			path = Modules;
@@ -239,6 +280,7 @@
 		41C2EFA928F33E5C005DDB5B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				41B4A7A328FDC14D00E553D3 /* Colors */,
 				41C2EFAA28F33E65005DDB5B /* ViewController */,
 			);
 			path = UI;
@@ -358,10 +400,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B4A7A228FDB62A00E553D3 /* Colors.xcassets in Resources */,
 				41F2277B28F2D85800856D7E /* LaunchScreen.storyboard in Resources */,
 				417BE81F28F2DD1D00EC1C28 /* GoogleService-Info.plist in Resources */,
 				41C2EFA728F33E0D005DDB5B /* Profile.storyboard in Resources */,
-				41F2277828F2D85800856D7E /* Assets.xcassets in Resources */,
+				41F2277828F2D85800856D7E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +459,7 @@
 			files = (
 				41C2EF9928F33728005DDB5B /* ProfileModelOutput.swift in Sources */,
 				41C2EF7C28F30430005DDB5B /* Routable.swift in Sources */,
+				41B4A79B28FDA2B400E553D3 /* TabBarCoordinator.swift in Sources */,
 				41C2EFA528F33D32005DDB5B /* ProfileModel+Input.swift in Sources */,
 				41C2EF9028F3363E005DDB5B /* ProfileViewProtocol.swift in Sources */,
 				41C2EF8C28F31512005DDB5B /* BaseViewModel.swift in Sources */,
@@ -426,15 +470,19 @@
 				41C2EF8128F30C38005DDB5B /* Router.swift in Sources */,
 				41C2EF9E28F33969005DDB5B /* ProfileModel+lifecycle.swift in Sources */,
 				41F2276C28F2D85400856D7E /* AppDelegate.swift in Sources */,
+				41B4A7A828FDC24800E553D3 /* ColorsConfig.swift in Sources */,
 				41C2EF8928F314AF005DDB5B /* ProfileAssembly.swift in Sources */,
 				41F2276E28F2D85400856D7E /* SceneDelegate.swift in Sources */,
 				41C2EF9428F336CD005DDB5B /* ProfileViewModel.swift in Sources */,
+				41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */,
 				41C2EFAC28F33E7B005DDB5B /* Controller+Storyboard.swift in Sources */,
 				41C2EF9B28F337EF005DDB5B /* ViewController.swift in Sources */,
+				41B4A7A028FDB20F00E553D3 /* TabBarCustomizator.swift in Sources */,
 				41C2EF8E28F31523005DDB5B /* BaseAssembly.swift in Sources */,
 				41C2EF7E28F3045C005DDB5B /* Controllable.swift in Sources */,
 				41C2EF8728F314A5005DDB5B /* ProfileCoordinator.swift in Sources */,
 				41C2EFA128F33BB3005DDB5B /* ProfileView+lifecycle.swift in Sources */,
+				41B4A7A528FDC15D00E553D3 /* UIColor+hex.swift in Sources */,
 				41C2EF9228F33647005DDB5B /* ProfileView.swift in Sources */,
 				41C2EF7A28F30103005DDB5B /* Coordinatable.swift in Sources */,
 			);

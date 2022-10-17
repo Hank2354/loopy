@@ -13,11 +13,12 @@ final class ProfileCoordinator: Coordinatable {
    
     private let router: Routable
     
-    fileprivate var initialVC: UIViewController { ProfileAssembly().configure() }
+    private weak var tabBarController: UITabBarController?
     
     // MARK: - Init
-    init(navigationController: UINavigationController) {
-        self.router = Router(navigationController: navigationController)
+    init(tabBarController: UITabBarController) {
+        self.router = Router(navigationController: UINavigationController())
+        self.tabBarController = tabBarController
     }
     
     deinit {
@@ -25,7 +26,19 @@ final class ProfileCoordinator: Coordinatable {
     }
     
     func start() {
-        router.hideNavigationBar(true)
-        router.setViewControllers([initialVC])
+        DispatchQueue.main.async {
+            let assembly = ProfileAssembly()
+            let controller = assembly.configure()
+            self.router.setViewControllers([controller])
+            let module = self.router.navigationController!
+            
+            
+            if var viewControllers = self.tabBarController?.viewControllers, viewControllers.count > 0 {
+                viewControllers.append(module)
+                self.tabBarController?.setViewControllers(viewControllers, animated: false)
+            } else {
+                self.tabBarController?.setViewControllers([module], animated: false)
+            }
+        }
     }
 }

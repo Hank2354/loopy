@@ -34,7 +34,7 @@ final class AppCoordinator: Coordinatable {
     }
     
     private func configureMainModule() {
-        let module = ProfileCoordinator(navigationController: router.navigationController!)
+        let module = TabBarCoordinator(navigationController: router.navigationController!)
         childCoordinators.append(module)
         module.start()
     }

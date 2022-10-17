@@ -21,11 +21,8 @@ final class ProfileAssembly: BaseAssembly {
         return view
     }
     
-    private static let tabBarImage = UIImage(named: "TB_home_inactive")?.withRenderingMode(.alwaysOriginal)
-    private static let tabBarImageSelected = UIImage(named: "TB_home_active")?.withRenderingMode(.alwaysOriginal)
-    
     private static var tabBarCustomItem: UITabBarItem { UITabBarItem(title: nil,
-                                                                     image: ProfileAssembly.tabBarImage,
-                                                                     selectedImage: ProfileAssembly.tabBarImageSelected) }
+                                                                     image: ImageConfig.homeTabBarImage,
+                                                                     selectedImage: ImageConfig.homeTabBarImageSelected) }
     
 }

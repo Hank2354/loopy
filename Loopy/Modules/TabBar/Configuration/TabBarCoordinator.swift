@@ -54,11 +54,11 @@ extension TabBarCoordinator {
         case .profile:
             coordinator = ProfileCoordinator(tabBarController: tabBar)
         case .receipts:
-            coordinator = ProfileCoordinator(tabBarController: tabBar)
+            coordinator = ReceiptsCoordinator(tabBarController: tabBar)
         case .fitness:
-            coordinator = ProfileCoordinator(tabBarController: tabBar)
+            coordinator = FitnessCoordinator(tabBarController: tabBar)
         case .statistics:
-            coordinator = ProfileCoordinator(tabBarController: tabBar)
+            coordinator = StatisticsCoordinator(tabBarController: tabBar)
         }
         coordinator.start()
         childCoordinators.append(coordinator)

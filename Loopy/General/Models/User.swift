@@ -8,18 +8,18 @@
 import Foundation
 
 struct User: Codable {
-    let id: Int                     // Идентификатор пользователя
-    let firstName: String           // Имя
-    let secondName: String          // Фамилия
-    @Link var imageURL: URL?        // Ссылка на изображение профиля
+    let id: Int                     // User id
+    let firstName: String           // Name
+    let secondName: String          // Surname
+    @Link var imageURL: URL?        // User profile photo link
     
-    let dailyPlan: LifeParams?      // Плановые дневные показатели
-    let dailyProgress: LifeParams?  // Текущие показатели на сегодняшную дату
+    let dailyPlan: LifeParams?      // Daily plan params
+    let dailyProgress: LifeParams?  // Current params for today
 }
 
 struct LifeParams: Codable {
-    let kkal: Int                   // Количество употребленной пищи (В ккал)
-    let steps: Int                  // Количество шагов (В штуках)
-    let sleep: Int                  // Количество сна (В часах)
-    let water: Double               // Количество выпитой воды (В литрах)
+    let kkal: Int                   // Amount of food consumed (in ccal)
+    let steps: Int                  // Amount of steps (in pcs)
+    let sleep: Int                  // Sleep time (in hours)
+    let water: Double               // Amount of water drink (in liters)
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		209FFD1ADE0222B249D77C70 /* Pods_Loopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBBAC4AD92D2A274FB05D34 /* Pods_Loopy.framework */; };
+		4163328A2901EB2000A1A12B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416332892901EB2000A1A12B /* User.swift */; };
+		4163328E2901EB9600A1A12B /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163328D2901EB9600A1A12B /* Link.swift */; };
 		417BE81F28F2DD1D00EC1C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */; };
 		41B4A79B28FDA2B400E553D3 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */; };
 		41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */; };
@@ -83,6 +85,8 @@
 /* Begin PBXFileReference section */
 		1EBBAC4AD92D2A274FB05D34 /* Pods_Loopy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loopy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBA923C331C75A308F20450 /* Pods-Loopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loopy.debug.xcconfig"; path = "Target Support Files/Pods-Loopy/Pods-Loopy.debug.xcconfig"; sourceTree = "<group>"; };
+		416332892901EB2000A1A12B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4163328D2901EB9600A1A12B /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
@@ -170,6 +174,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		416332882901EB1200A1A12B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				416332892901EB2000A1A12B /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4163328B2901EB6900A1A12B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4163328C2901EB6F00A1A12B /* PropertyWrappers */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4163328C2901EB6F00A1A12B /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				4163328D2901EB9600A1A12B /* Link.swift */,
+			);
+			path = PropertyWrappers;
+			sourceTree = "<group>";
+		};
 		41B4A79828FDA26F00E553D3 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +465,8 @@
 		41C2EF7628F300AA005DDB5B /* General */ = {
 			isa = PBXGroup;
 			children = (
+				4163328B2901EB6900A1A12B /* Helpers */,
+				416332882901EB1200A1A12B /* Models */,
 				41C2EF7F28F30C2B005DDB5B /* ModuleComponents */,
 				41C2EF7728F300DC005DDB5B /* Protocols */,
 				41C2EFA828F33E52005DDB5B /* Extensions */,
@@ -766,6 +796,7 @@
 				41B4A7F928FDD6AE00E553D3 /* FitnessView+Output.swift in Sources */,
 				41C2EF7528F2FE4D005DDB5B /* AppCoordinator.swift in Sources */,
 				41B4A7CD28FDD26200E553D3 /* FitnessModel+Lifecycle.swift in Sources */,
+				4163328E2901EB9600A1A12B /* Link.swift in Sources */,
 				41B4A7F328FDD67700E553D3 /* ReceiptsView+Lifecycle.swift in Sources */,
 				41C2EF8128F30C38005DDB5B /* Router.swift in Sources */,
 				41C2EF9E28F33969005DDB5B /* ProfileModel+lifecycle.swift in Sources */,
@@ -780,6 +811,7 @@
 				41B4A80128FDD75F00E553D3 /* ReceiptsAssembly.swift in Sources */,
 				41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */,
 				41B4A7BD28FDCFB600E553D3 /* ReceiptsModelOutput.swift in Sources */,
+				4163328A2901EB2000A1A12B /* User.swift in Sources */,
 				41B4A7E028FDD49200E553D3 /* ReceiptsViewProtocol.swift in Sources */,
 				41B4A7B828FDCF9600E553D3 /* ReceiptsViewModel.swift in Sources */,
 				41C2EFAC28F33E7B005DDB5B /* Controller+Storyboard.swift in Sources */,

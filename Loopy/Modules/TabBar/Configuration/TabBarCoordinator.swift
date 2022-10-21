@@ -43,8 +43,6 @@ extension TabBarCoordinator {
         // Set initial VC
         tabBar.selectedIndex = startingController.rawValue
         
-        TabBarCustomizator.addCustomizationTo(tabBar)
-        
         return tabBar
     }
     

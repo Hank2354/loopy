@@ -13,7 +13,6 @@
 		417BE81F28F2DD1D00EC1C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */; };
 		41B4A79B28FDA2B400E553D3 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */; };
 		41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */; };
-		41B4A7A028FDB20F00E553D3 /* TabBarCustomizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79F28FDB20F00E553D3 /* TabBarCustomizator.swift */; };
 		41B4A7A228FDB62A00E553D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B4A7A128FDB62A00E553D3 /* Colors.xcassets */; };
 		41B4A7A528FDC15D00E553D3 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A7A428FDC15D00E553D3 /* UIColor+hex.swift */; };
 		41B4A7A828FDC24800E553D3 /* ColorsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A7A728FDC24800E553D3 /* ColorsConfig.swift */; };
@@ -90,7 +89,6 @@
 		417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
-		41B4A79F28FDB20F00E553D3 /* TabBarCustomizator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustomizator.swift; sourceTree = "<group>"; };
 		41B4A7A128FDB62A00E553D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		41B4A7A428FDC15D00E553D3 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		41B4A7A728FDC24800E553D3 /* ColorsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsConfig.swift; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 			children = (
 				41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */,
 				41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */,
-				41B4A79F28FDB20F00E553D3 /* TabBarCustomizator.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -817,7 +814,6 @@
 				41C2EFAC28F33E7B005DDB5B /* Controller+Storyboard.swift in Sources */,
 				41C2EF9B28F337EF005DDB5B /* ViewController.swift in Sources */,
 				41B4A7D928FDD30A00E553D3 /* StatisticsModel+Lifecycle.swift in Sources */,
-				41B4A7A028FDB20F00E553D3 /* TabBarCustomizator.swift in Sources */,
 				41C2EF8E28F31523005DDB5B /* BaseAssembly.swift in Sources */,
 				41C2EF7E28F3045C005DDB5B /* Controllable.swift in Sources */,
 				41C2EF8728F314A5005DDB5B /* ProfileCoordinator.swift in Sources */,

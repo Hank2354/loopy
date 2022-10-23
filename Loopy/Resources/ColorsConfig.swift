@@ -9,5 +9,19 @@ import UIKit
 
 public final class ColorConfig {
     
-    static let TabBarColor = UIColor(named: "TabBarColor")!
+    static let tabBarColor  = UIColor(named: "TabBarColor")!
+    
+    static let background   = UIColor(named: "Background")!
+    
+    static let accentOrange = UIColor(named: "AccentOrange")!
+    
+    static let lavender     = UIColor(named: "Lavender")!
+    
+    static let lightOrange  = UIColor(named: "LightOrange")!
+    
+    static let salat        = UIColor(named: "Salat")!
+    
+    static let waterBlue    = UIColor(named: "WaterBlue")!
 }
+
+

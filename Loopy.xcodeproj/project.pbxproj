@@ -11,6 +11,7 @@
 		4163328A2901EB2000A1A12B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416332892901EB2000A1A12B /* User.swift */; };
 		4163328E2901EB9600A1A12B /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163328D2901EB9600A1A12B /* Link.swift */; };
 		417BE81F28F2DD1D00EC1C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */; };
+		417CF33929056A25000862CE /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CF33829056A25000862CE /* Gradients.swift */; };
 		41B4A79B28FDA2B400E553D3 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */; };
 		41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */; };
 		41B4A7A228FDB62A00E553D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B4A7A128FDB62A00E553D3 /* Colors.xcassets */; };
@@ -87,6 +88,7 @@
 		416332892901EB2000A1A12B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4163328D2901EB9600A1A12B /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		417CF33829056A25000862CE /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
 		41B4A7A128FDB62A00E553D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -196,6 +198,13 @@
 			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
+		417CF33A29056E93000862CE /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		41B4A79828FDA26F00E553D3 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				41B4A7A428FDC15D00E553D3 /* UIColor+hex.swift */,
+				417CF33829056A25000862CE /* Gradients.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -525,6 +535,7 @@
 				41C2EF9128F33647005DDB5B /* ProfileView.swift */,
 				41C2EF8F28F3363E005DDB5B /* ProfileViewProtocol.swift */,
 				41C2EF9F28F33BA1005DDB5B /* Extensions */,
+				417CF33A29056E93000862CE /* Subviews */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -777,6 +788,7 @@
 				41B4A7F528FDD68E00E553D3 /* ReceiptsView+Output.swift in Sources */,
 				41B4A7D328FDD2BF00E553D3 /* StatisticsViewModel.swift in Sources */,
 				41B4A7AA28FDCD4E00E553D3 /* ImageConfig.swift in Sources */,
+				417CF33929056A25000862CE /* Gradients.swift in Sources */,
 				41B4A80728FDD86200E553D3 /* ReceiptsCoordinator.swift in Sources */,
 				41B4A7E728FDD50500E553D3 /* ReceiptsView.swift in Sources */,
 				41B4A7DB28FDD32E00E553D3 /* StatisticsModel+Input.swift in Sources */,

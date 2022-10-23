@@ -36,10 +36,32 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="DFY-fH-je2">
+                                                <rect key="frame" x="41" y="23" width="200" height="43.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUb-2E-bkr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="154.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Аноним" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7d-yN-IZh">
+                                                        <rect key="frame" x="0.0" y="19.5" width="76" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="O9D-fr-u0g"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="DFY-fH-je2" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" constant="41" id="0S1-IA-aff"/>
                                             <constraint firstAttribute="height" constant="1000" id="13m-af-oPz"/>
                                             <constraint firstItem="AGX-zT-gaj" firstAttribute="top" secondItem="cqq-ff-msn" secondAttribute="top" constant="23" id="LMT-z6-he8"/>
+                                            <constraint firstItem="DFY-fH-je2" firstAttribute="top" secondItem="cqq-ff-msn" secondAttribute="top" constant="23" id="Twd-CY-60F"/>
                                             <constraint firstAttribute="trailing" secondItem="AGX-zT-gaj" secondAttribute="trailing" constant="42" id="mgL-vW-cTj"/>
                                         </constraints>
                                     </view>

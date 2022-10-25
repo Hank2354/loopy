@@ -10,4 +10,11 @@ import UIKit
 class ProfileView: ViewController, ProfileViewProtocol {
     
     var model: ProfileModelInput!
+    
+    // MARK: - Plate views
+    @IBOutlet weak var foodPlateView: DailyPlateView!
+    @IBOutlet weak var stepsPlateView: DailyPlateView!
+    @IBOutlet weak var sleepPlateView: DailyPlateView!
+    @IBOutlet weak var waterPlateView: DailyPlateView!
+    
 }

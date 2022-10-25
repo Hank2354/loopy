@@ -12,6 +12,12 @@
 		4163328E2901EB9600A1A12B /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163328D2901EB9600A1A12B /* Link.swift */; };
 		417BE81F28F2DD1D00EC1C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */; };
 		417CF33929056A25000862CE /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CF33829056A25000862CE /* Gradients.swift */; };
+		417CF33E29057F38000862CE /* DailyPlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CF33D29057F38000862CE /* DailyPlateView.swift */; };
+		417CF34029057F75000862CE /* DailyPlate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417CF33F29057F75000862CE /* DailyPlate.xib */; };
+		417CF34329058178000862CE /* DailyPlate+IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CF34229058178000862CE /* DailyPlate+IBDesignable.swift */; };
+		417CF345290582EE000862CE /* CGColor+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CF344290582ED000862CE /* CGColor+Convert.swift */; };
+		4194EBFA29088392006B096F /* PlateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EBF929088392006B096F /* PlateProtocol.swift */; };
+		4194EBFC290883DE006B096F /* DailyPlateView+PlateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4194EBFB290883DE006B096F /* DailyPlateView+PlateProtocol.swift */; };
 		41B4A79B28FDA2B400E553D3 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */; };
 		41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */; };
 		41B4A7A228FDB62A00E553D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B4A7A128FDB62A00E553D3 /* Colors.xcassets */; };
@@ -80,6 +86,7 @@
 		41F2277628F2D85400856D7E /* Loopy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41F2277428F2D85400856D7E /* Loopy.xcdatamodeld */; };
 		41F2277828F2D85800856D7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F2277728F2D85800856D7E /* Images.xcassets */; };
 		41F2277B28F2D85800856D7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F2277928F2D85800856D7E /* LaunchScreen.storyboard */; };
+		41F9ADD229088D1C001967BD /* DailyPlateView+Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9ADD129088D1C001967BD /* DailyPlateView+Highlight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +96,12 @@
 		4163328D2901EB9600A1A12B /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		417CF33829056A25000862CE /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		417CF33D29057F38000862CE /* DailyPlateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlateView.swift; sourceTree = "<group>"; };
+		417CF33F29057F75000862CE /* DailyPlate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyPlate.xib; sourceTree = "<group>"; };
+		417CF34229058178000862CE /* DailyPlate+IBDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyPlate+IBDesignable.swift"; sourceTree = "<group>"; };
+		417CF344290582ED000862CE /* CGColor+Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+Convert.swift"; sourceTree = "<group>"; };
+		4194EBF929088392006B096F /* PlateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateProtocol.swift; sourceTree = "<group>"; };
+		4194EBFB290883DE006B096F /* DailyPlateView+PlateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyPlateView+PlateProtocol.swift"; sourceTree = "<group>"; };
 		41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
 		41B4A7A128FDB62A00E553D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -159,6 +172,7 @@
 		41F2277728F2D85800856D7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		41F2277A28F2D85800856D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41F2277C28F2D85800856D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F9ADD129088D1C001967BD /* DailyPlateView+Highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyPlateView+Highlight.swift"; sourceTree = "<group>"; };
 		88C19348CF9D0B0F87CF46CD /* Pods-Loopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loopy.release.xcconfig"; path = "Target Support Files/Pods-Loopy/Pods-Loopy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,8 +215,38 @@
 		417CF33A29056E93000862CE /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				417CF33B29057F0F000862CE /* DailyPlate */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		417CF33B29057F0F000862CE /* DailyPlate */ = {
+			isa = PBXGroup;
+			children = (
+				417CF33F29057F75000862CE /* DailyPlate.xib */,
+				417CF33D29057F38000862CE /* DailyPlateView.swift */,
+				4194EBF829088382006B096F /* Protocols */,
+				417CF34129058164000862CE /* Extensions */,
+			);
+			path = DailyPlate;
+			sourceTree = "<group>";
+		};
+		417CF34129058164000862CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				417CF34229058178000862CE /* DailyPlate+IBDesignable.swift */,
+				4194EBFB290883DE006B096F /* DailyPlateView+PlateProtocol.swift */,
+				41F9ADD129088D1C001967BD /* DailyPlateView+Highlight.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4194EBF829088382006B096F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4194EBF929088392006B096F /* PlateProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		41B4A79828FDA26F00E553D3 /* TabBar */ = {
@@ -226,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				41B4A7A428FDC15D00E553D3 /* UIColor+hex.swift */,
+				417CF344290582ED000862CE /* CGColor+Convert.swift */,
 				417CF33829056A25000862CE /* Gradients.swift */,
 			);
 			path = Colors;
@@ -724,6 +769,7 @@
 				41B4A7ED28FDD58700E553D3 /* Receipts.storyboard in Resources */,
 				41C2EFA728F33E0D005DDB5B /* Profile.storyboard in Resources */,
 				41F2277828F2D85800856D7E /* Images.xcassets in Resources */,
+				417CF34029057F75000862CE /* DailyPlate.xib in Resources */,
 				41B4A7F128FDD65200E553D3 /* Statistics.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -780,12 +826,14 @@
 				41B4A80328FDD7BD00E553D3 /* FitnessAssembly.swift in Sources */,
 				41B4A7F728FDD69E00E553D3 /* FitnessView+Lifecycle.swift in Sources */,
 				41C2EF9928F33728005DDB5B /* ProfileModelOutput.swift in Sources */,
+				417CF34329058178000862CE /* DailyPlate+IBDesignable.swift in Sources */,
 				41B4A7EB28FDD52000E553D3 /* StatisticsView.swift in Sources */,
 				41B4A7E228FDD49C00E553D3 /* FitnessViewProtocol.swift in Sources */,
 				41B4A7E528FDD4AF00E553D3 /* StatisticsViewProtocol.swift in Sources */,
 				41B4A7C228FDD02800E553D3 /* ReceiptModel+Input.swift in Sources */,
 				41C2EF7C28F30430005DDB5B /* Routable.swift in Sources */,
 				41B4A7F528FDD68E00E553D3 /* ReceiptsView+Output.swift in Sources */,
+				417CF345290582EE000862CE /* CGColor+Convert.swift in Sources */,
 				41B4A7D328FDD2BF00E553D3 /* StatisticsViewModel.swift in Sources */,
 				41B4A7AA28FDCD4E00E553D3 /* ImageConfig.swift in Sources */,
 				417CF33929056A25000862CE /* Gradients.swift in Sources */,
@@ -799,12 +847,15 @@
 				41F2277628F2D85400856D7E /* Loopy.xcdatamodeld in Sources */,
 				41C2EFA328F33CEE005DDB5B /* ProfileView+Output.swift in Sources */,
 				41B4A80528FDD7CE00E553D3 /* StatisticsAssembly.swift in Sources */,
+				4194EBFC290883DE006B096F /* DailyPlateView+PlateProtocol.swift in Sources */,
 				41B4A7BB28FDCFAD00E553D3 /* ReceiptsModelInput.swift in Sources */,
+				41F9ADD229088D1C001967BD /* DailyPlateView+Highlight.swift in Sources */,
 				41B4A7FB28FDD6BC00E553D3 /* StatisticsView+Lifecycle.swift in Sources */,
 				41C2EF9728F336FE005DDB5B /* ProfileModelInput.swift in Sources */,
 				41B4A7F928FDD6AE00E553D3 /* FitnessView+Output.swift in Sources */,
 				41C2EF7528F2FE4D005DDB5B /* AppCoordinator.swift in Sources */,
 				41B4A7CD28FDD26200E553D3 /* FitnessModel+Lifecycle.swift in Sources */,
+				4194EBFA29088392006B096F /* PlateProtocol.swift in Sources */,
 				4163328E2901EB9600A1A12B /* Link.swift in Sources */,
 				41B4A7F328FDD67700E553D3 /* ReceiptsView+Lifecycle.swift in Sources */,
 				41C2EF8128F30C38005DDB5B /* Router.swift in Sources */,
@@ -826,6 +877,7 @@
 				41C2EFAC28F33E7B005DDB5B /* Controller+Storyboard.swift in Sources */,
 				41C2EF9B28F337EF005DDB5B /* ViewController.swift in Sources */,
 				41B4A7D928FDD30A00E553D3 /* StatisticsModel+Lifecycle.swift in Sources */,
+				417CF33E29057F38000862CE /* DailyPlateView.swift in Sources */,
 				41C2EF8E28F31523005DDB5B /* BaseAssembly.swift in Sources */,
 				41C2EF7E28F3045C005DDB5B /* Controllable.swift in Sources */,
 				41C2EF8728F314A5005DDB5B /* ProfileCoordinator.swift in Sources */,

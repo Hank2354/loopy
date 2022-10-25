@@ -56,12 +56,93 @@
                                                     <constraint firstAttribute="width" constant="200" id="O9D-fr-u0g"/>
                                                 </constraints>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-0g-umm">
+                                                <rect key="frame" x="20" y="96.5" width="374" height="294"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bjh-5M-57M">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="135"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90j-hS-vmd" customClass="DailyPlateView" customModule="Loopy" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="175" height="135"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="135" id="5Te-8d-rbE"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="LightYellow"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="food"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                        <color key="value" name="LightOrange"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShQ-WO-uRh" customClass="DailyPlateView" customModule="Loopy" customModuleProvider="target">
+                                                                <rect key="frame" x="199" y="0.0" width="175" height="135"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="LightYellow"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="steps"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                        <color key="value" name="Lavender"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="7tP-zk-srU">
+                                                        <rect key="frame" x="0.0" y="159" width="374" height="135"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYU-Oo-VL4" customClass="DailyPlateView" customModule="Loopy" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="175" height="135"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="LightYellow"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="sleep"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                        <color key="value" name="Salat"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szI-xE-cID" customClass="DailyPlateView" customModule="Loopy" customModuleProvider="target">
+                                                                <rect key="frame" x="199" y="0.0" width="175" height="135"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="LightYellow"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="water"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                        <color key="value" name="WaterBlue"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="DFY-fH-je2" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" constant="41" id="0S1-IA-aff"/>
                                             <constraint firstAttribute="height" constant="1000" id="13m-af-oPz"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lyg-0g-umm" secondAttribute="trailing" constant="20" id="8Yf-ap-Cq0"/>
                                             <constraint firstItem="AGX-zT-gaj" firstAttribute="top" secondItem="cqq-ff-msn" secondAttribute="top" constant="23" id="LMT-z6-he8"/>
                                             <constraint firstItem="DFY-fH-je2" firstAttribute="top" secondItem="cqq-ff-msn" secondAttribute="top" constant="23" id="Twd-CY-60F"/>
+                                            <constraint firstItem="Lyg-0g-umm" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" constant="20" id="gpE-Ik-lhw"/>
+                                            <constraint firstItem="Lyg-0g-umm" firstAttribute="top" secondItem="DFY-fH-je2" secondAttribute="bottom" constant="30" id="m0U-ct-1pG"/>
                                             <constraint firstAttribute="trailing" secondItem="AGX-zT-gaj" secondAttribute="trailing" constant="42" id="mgL-vW-cTj"/>
                                         </constraints>
                                     </view>
@@ -88,6 +169,12 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="foodPlateView" destination="90j-hS-vmd" id="Njg-bl-nen"/>
+                        <outlet property="sleepPlateView" destination="mYU-Oo-VL4" id="okc-rX-DDZ"/>
+                        <outlet property="stepsPlateView" destination="ShQ-WO-uRh" id="odd-f6-OFm"/>
+                        <outlet property="waterPlateView" destination="szI-xE-cID" id="Q6e-lg-mGo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,9 +182,28 @@
         </scene>
     </scenes>
     <resources>
+        <image name="food" width="14" height="14"/>
         <image name="profileImage" width="50" height="50"/>
+        <image name="sleep" width="14" height="14"/>
+        <image name="steps" width="14" height="14"/>
+        <image name="water" width="14" height="14"/>
         <namedColor name="Background">
             <color red="0.070588235294117646" green="0.094117647058823528" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Lavender">
+            <color red="0.46274509803921571" green="0.4823529411764706" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightOrange">
+            <color red="1" green="0.7803921568627451" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightYellow">
+            <color red="0.99607843137254903" green="0.96470588235294119" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Salat">
+            <color red="0.15686274509803921" green="0.94509803921568625" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WaterBlue">
+            <color red="0.27450980392156865" green="0.67450980392156867" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

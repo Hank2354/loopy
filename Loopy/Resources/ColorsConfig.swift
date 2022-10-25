@@ -22,6 +22,8 @@ public final class ColorConfig {
     static let salat        = UIColor(named: "Salat")!
     
     static let waterBlue    = UIColor(named: "WaterBlue")!
+    
+    static let lightYellow  = UIColor(named: "LightYellow")!
 }
 
 

@@ -8,12 +8,21 @@
 import UIKit
 
 extension DailyPlateView: PlateProtocol {
-    func configure(with title: String?, subText: String?) {
-        headerTitle.text = title
-        subtitle.text = subText
+    func configure(with type: Plate) {
+        headerTitle.text = type.header
+        subtitle.text = type.suffix
+        self.type = type
     }
     
-    func setPlateValue(_ value: String?) {
-        valueTitle.text = value
+    func setPlateValue(_ value: Float?) {
+        valueTitle.text = String(Int(value ?? 0))
+        
+        if let type, let value {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .decimal
+            formatter.groupingSeparator = " "
+            formatter.maximumFractionDigits = type.maximumFractionDigits
+            valueTitle.text = formatter.string(from: value as NSNumber)
+        }
     }
 }

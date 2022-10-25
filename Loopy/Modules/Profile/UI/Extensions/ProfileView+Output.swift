@@ -7,15 +7,15 @@
 
 extension ProfileView: ProfileModelOutput {
     func configPlates() {
-        foodPlateView.configure(with: "Питание", subText: "ккал")
-        stepsPlateView.configure(with: "Шаги", subText: "шагов")
-        sleepPlateView.configure(with: "Сон", subText: "часов")
-        waterPlateView.configure(with: "Вода", subText: "литров")
+        foodPlateView.configure(with: .food)
+        stepsPlateView.configure(with: .steps)
+        sleepPlateView.configure(with: .sleep)
+        waterPlateView.configure(with: .water)
         
         // Set mock values
-        foodPlateView.setPlateValue("720")
-        stepsPlateView.setPlateValue("10 000")
-        sleepPlateView.setPlateValue("7")
-        waterPlateView.setPlateValue("1,0")
+        foodPlateView.setPlateValue(720)
+        stepsPlateView.setPlateValue(10000)
+        sleepPlateView.setPlateValue(7)
+        waterPlateView.setPlateValue(1.0)
     }
 }

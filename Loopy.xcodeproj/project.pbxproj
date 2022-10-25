@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		209FFD1ADE0222B249D77C70 /* Pods_Loopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBBAC4AD92D2A274FB05D34 /* Pods_Loopy.framework */; };
-		4163328A2901EB2000A1A12B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416332892901EB2000A1A12B /* User.swift */; };
 		4163328E2901EB9600A1A12B /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163328D2901EB9600A1A12B /* Link.swift */; };
 		417BE81F28F2DD1D00EC1C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */; };
 		417CF33929056A25000862CE /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CF33829056A25000862CE /* Gradients.swift */; };
@@ -87,12 +86,12 @@
 		41F2277828F2D85800856D7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F2277728F2D85800856D7E /* Images.xcassets */; };
 		41F2277B28F2D85800856D7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F2277928F2D85800856D7E /* LaunchScreen.storyboard */; };
 		41F9ADD229088D1C001967BD /* DailyPlateView+Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9ADD129088D1C001967BD /* DailyPlateView+Highlight.swift */; };
+		41F9ADD729089207001967BD /* Plate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9ADD629089207001967BD /* Plate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EBBAC4AD92D2A274FB05D34 /* Pods_Loopy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loopy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBA923C331C75A308F20450 /* Pods-Loopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loopy.debug.xcconfig"; path = "Target Support Files/Pods-Loopy/Pods-Loopy.debug.xcconfig"; sourceTree = "<group>"; };
-		416332892901EB2000A1A12B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4163328D2901EB9600A1A12B /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		417CF33829056A25000862CE /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
@@ -173,6 +172,7 @@
 		41F2277A28F2D85800856D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41F2277C28F2D85800856D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41F9ADD129088D1C001967BD /* DailyPlateView+Highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyPlateView+Highlight.swift"; sourceTree = "<group>"; };
+		41F9ADD629089207001967BD /* Plate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plate.swift; sourceTree = "<group>"; };
 		88C19348CF9D0B0F87CF46CD /* Pods-Loopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loopy.release.xcconfig"; path = "Target Support Files/Pods-Loopy/Pods-Loopy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,14 +188,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		416332882901EB1200A1A12B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				416332892901EB2000A1A12B /* User.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		4163328B2901EB6900A1A12B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +217,7 @@
 			children = (
 				417CF33F29057F75000862CE /* DailyPlate.xib */,
 				417CF33D29057F38000862CE /* DailyPlateView.swift */,
+				41F9ADD629089207001967BD /* Plate.swift */,
 				4194EBF829088382006B096F /* Protocols */,
 				417CF34129058164000862CE /* Extensions */,
 			);
@@ -518,7 +511,6 @@
 			isa = PBXGroup;
 			children = (
 				4163328B2901EB6900A1A12B /* Helpers */,
-				416332882901EB1200A1A12B /* Models */,
 				41C2EF7F28F30C2B005DDB5B /* ModuleComponents */,
 				41C2EF7728F300DC005DDB5B /* Protocols */,
 				41C2EFA828F33E52005DDB5B /* Extensions */,
@@ -845,6 +837,7 @@
 				41C2EF9028F3363E005DDB5B /* ProfileViewProtocol.swift in Sources */,
 				41C2EF8C28F31512005DDB5B /* BaseViewModel.swift in Sources */,
 				41F2277628F2D85400856D7E /* Loopy.xcdatamodeld in Sources */,
+				41F9ADD729089207001967BD /* Plate.swift in Sources */,
 				41C2EFA328F33CEE005DDB5B /* ProfileView+Output.swift in Sources */,
 				41B4A80528FDD7CE00E553D3 /* StatisticsAssembly.swift in Sources */,
 				4194EBFC290883DE006B096F /* DailyPlateView+PlateProtocol.swift in Sources */,
@@ -871,7 +864,6 @@
 				41B4A80128FDD75F00E553D3 /* ReceiptsAssembly.swift in Sources */,
 				41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */,
 				41B4A7BD28FDCFB600E553D3 /* ReceiptsModelOutput.swift in Sources */,
-				4163328A2901EB2000A1A12B /* User.swift in Sources */,
 				41B4A7E028FDD49200E553D3 /* ReceiptsViewProtocol.swift in Sources */,
 				41B4A7B828FDCF9600E553D3 /* ReceiptsViewModel.swift in Sources */,
 				41C2EFAC28F33E7B005DDB5B /* Controller+Storyboard.swift in Sources */,

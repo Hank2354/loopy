@@ -13,6 +13,8 @@ import UIKit
     private let radiusMultipler: CGFloat = 4.218
     private var isLoadedFromXib: Bool = false
     
+    var type: Plate?
+    
     // MARK: - Subviews
     var view: UIView!
     

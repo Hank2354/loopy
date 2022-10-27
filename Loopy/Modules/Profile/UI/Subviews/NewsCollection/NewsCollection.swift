@@ -10,7 +10,7 @@ import UIKit
 final class NewsCollection: UICollectionView {
     
     // MARK: - Properties
-    var news = [Any]()
+    var news = [NewsItem]()
     
     // MARK: - Init
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
@@ -27,14 +27,21 @@ final class NewsCollection: UICollectionView {
     
     func generalInit() {
         setupView()
-        cellRegistration()
-        setupDelegate()
-        news = [1,2]
-        reloadData()
-        
     }
 }
 
+// MARK: - For use
+extension NewsCollection {
+    func setNews(_ news: [NewsItem]) {
+        self.news = news
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.reloadData()
+        }
+    }
+}
+
+// MARK: - Config
 extension NewsCollection {
     
     static var newFlowLayout: UICollectionViewFlowLayout {
@@ -54,6 +61,10 @@ extension NewsCollection {
         showsHorizontalScrollIndicator = false
         showsVerticalScrollIndicator = false
         backgroundColor = .clear
+        decelerationRate = .fast
+        
+        cellRegistration()
+        setupDelegate()
     }
     
     

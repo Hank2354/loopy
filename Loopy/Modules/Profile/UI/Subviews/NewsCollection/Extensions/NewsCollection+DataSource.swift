@@ -16,6 +16,7 @@ extension NewsCollection: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(indexPath: indexPath) as NewsCell
+        cell.configureCell(with: news[indexPath.item])
         return cell
     }
 }

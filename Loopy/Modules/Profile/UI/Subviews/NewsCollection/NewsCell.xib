@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,18 +12,88 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsCollection" customModule="Loopy" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NewsCell" customModule="Loopy" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="474" height="199"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="NewsCell" customModule="Loopy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="166"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SOF-jd-17W">
+                    <rect key="frame" x="0.0" y="0.0" width="381" height="166"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                </imageView>
+                <visualEffectView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Rf-U6-6Y2">
+                    <rect key="frame" x="0.0" y="126" width="381" height="40"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1kz-KK-D0B">
+                        <rect key="frame" x="0.0" y="0.0" width="381" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="подробнее..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0F-g1-UQ0">
+                                <rect key="frame" x="297.33333333333331" y="13" width="75.666666666666686" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="AccentOrange"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Новая программа тренировок от ведущего тренера РФ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Kv-lg-sKO">
+                                <rect key="frame" x="8" y="8" width="285.33333333333331" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" name="LightLavender"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="H0F-g1-UQ0" secondAttribute="trailing" constant="8" id="0la-ci-A8e"/>
+                            <constraint firstItem="H0F-g1-UQ0" firstAttribute="leading" secondItem="7Kv-lg-sKO" secondAttribute="trailing" constant="4" id="3Nd-EQ-73L"/>
+                            <constraint firstItem="7Kv-lg-sKO" firstAttribute="centerY" secondItem="1kz-KK-D0B" secondAttribute="centerY" id="S04-lr-KZ1"/>
+                            <constraint firstItem="H0F-g1-UQ0" firstAttribute="centerY" secondItem="1kz-KK-D0B" secondAttribute="centerY" id="aZQ-kv-jBV"/>
+                            <constraint firstItem="7Kv-lg-sKO" firstAttribute="leading" secondItem="1kz-KK-D0B" secondAttribute="leading" constant="8" id="iu9-EM-BpW"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="mpm-sl-dx0"/>
+                    </constraints>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <stackView verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5CR-5I-JMv">
+                    <rect key="frame" x="323" y="8" width="50" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="MA1-ra-teJ"/>
+                    </constraints>
+                </stackView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemCyanColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6Rf-U6-6Y2" secondAttribute="bottom" id="5p9-Fk-Tye"/>
+                <constraint firstItem="SOF-jd-17W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GDB-Jw-u19"/>
+                <constraint firstItem="5CR-5I-JMv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Wn9-cF-Zax"/>
+                <constraint firstItem="6Rf-U6-6Y2" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="aJ0-aP-9dh"/>
+                <constraint firstAttribute="bottom" secondItem="SOF-jd-17W" secondAttribute="bottom" id="hxs-cK-mw7"/>
+                <constraint firstItem="SOF-jd-17W" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="iy4-G3-rfh"/>
+                <constraint firstItem="6Rf-U6-6Y2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lI7-LO-NWs"/>
+                <constraint firstItem="SOF-jd-17W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mHW-AU-Zpw"/>
+                <constraint firstAttribute="trailing" secondItem="5CR-5I-JMv" secondAttribute="trailing" constant="8" id="xSe-fW-Wbq"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="63.076923076923073" y="-208.64928909952604"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="newsImageView" destination="SOF-jd-17W" id="lXK-9u-nw0"/>
+                <outlet property="newsTitle" destination="7Kv-lg-sKO" id="YVi-Vi-mgk"/>
+                <outlet property="tagStack" destination="5CR-5I-JMv" id="wps-qi-qfY"/>
+            </connections>
+            <point key="canvasLocation" x="-8.4615384615384617" y="-220.37914691943126"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="AccentOrange">
+            <color red="1" green="0.41960784313725491" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightLavender">
+            <color red="0.93333333333333335" green="0.94117647058823528" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

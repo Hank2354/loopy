@@ -27,8 +27,8 @@ enum NewsTag: Hashable, RawRepresentable {
     // PROPERTIES
     var title: String {
         switch self {
-        case .custom(let title): return title.uppercased()
-        default:                 return rawValue.uppercased()
+        case .custom(let title): return title.capitalized
+        default:                 return rawValue.capitalized
         }
     }
     
@@ -43,8 +43,8 @@ enum NewsTag: Hashable, RawRepresentable {
     
     var icon: UIImage {
         switch self {
-        case .new:     return ImageConfig.SystemIcon.checkmark
-        case .hot:     return ImageConfig.SystemIcon.flame
+        case .new:     return ImageConfig.TagIcons.checkmark
+        case .hot:     return ImageConfig.TagIcons.flame
         case .special: return ImageConfig.SystemIcon.bolt
         case .custom:  return ImageConfig.SystemIcon.seal
         }

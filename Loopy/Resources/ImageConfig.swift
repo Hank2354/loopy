@@ -32,6 +32,11 @@ public extension ImageConfig {
         static let steps = UIImage(named: "steps")!
         static let food  = UIImage(named: "food")!
     }
+    
+    struct TagIcons {
+        static let flame     = UIImage(named: "flame")!
+        static let checkmark = UIImage(named: "checkmark")!
+    }
 }
 
 public extension ImageConfig {

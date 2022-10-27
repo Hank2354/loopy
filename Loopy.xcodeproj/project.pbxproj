@@ -29,6 +29,12 @@
 		419F854D290AED6B00D81ED2 /* PagingCollectionViewLayout .swift in Sources */ = {isa = PBXBuildFile; fileRef = 419F854C290AED6B00D81ED2 /* PagingCollectionViewLayout .swift */; };
 		419F8551290AF12900D81ED2 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419F8550290AF12900D81ED2 /* NewsItem.swift */; };
 		419F8553290B049B00D81ED2 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 419F8552290B049B00D81ED2 /* NewsCell.xib */; };
+		41ACBA5D290B1EAE00BDF9D0 /* NewsTag.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41ACBA5C290B1EAE00BDF9D0 /* NewsTag.xib */; };
+		41ACBA5F290B1EBA00BDF9D0 /* NewsTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ACBA5E290B1EBA00BDF9D0 /* NewsTagView.swift */; };
+		41ACBA62290B229B00BDF9D0 /* UIStackView+clear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ACBA61290B229B00BDF9D0 /* UIStackView+clear.swift */; };
+		41ACBA65290B265E00BDF9D0 /* XIBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ACBA64290B265E00BDF9D0 /* XIBView.swift */; };
+		41ACBA68290B2F3700BDF9D0 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ACBA67290B2F3700BDF9D0 /* ImageLoader.swift */; };
+		41ACBA6B290B323D00BDF9D0 /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ACBA6A290B323D00BDF9D0 /* UIImage+resize.swift */; };
 		41B4A79B28FDA2B400E553D3 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */; };
 		41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */; };
 		41B4A7A228FDB62A00E553D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B4A7A128FDB62A00E553D3 /* Colors.xcassets */; };
@@ -125,6 +131,12 @@
 		419F854C290AED6B00D81ED2 /* PagingCollectionViewLayout .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PagingCollectionViewLayout .swift"; sourceTree = "<group>"; };
 		419F8550290AF12900D81ED2 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		419F8552290B049B00D81ED2 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		41ACBA5C290B1EAE00BDF9D0 /* NewsTag.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTag.xib; sourceTree = "<group>"; };
+		41ACBA5E290B1EBA00BDF9D0 /* NewsTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTagView.swift; sourceTree = "<group>"; };
+		41ACBA61290B229B00BDF9D0 /* UIStackView+clear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+clear.swift"; sourceTree = "<group>"; };
+		41ACBA64290B265E00BDF9D0 /* XIBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBView.swift; sourceTree = "<group>"; };
+		41ACBA67290B2F3700BDF9D0 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		41ACBA6A290B323D00BDF9D0 /* UIImage+resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resize.swift"; sourceTree = "<group>"; };
 		41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
 		41B4A7A128FDB62A00E553D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -215,6 +227,7 @@
 		4163328B2901EB6900A1A12B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				41ACBA66290B2F0F00BDF9D0 /* HelperTools */,
 				4163328C2901EB6F00A1A12B /* PropertyWrappers */,
 			);
 			path = Helpers;
@@ -232,6 +245,7 @@
 		417CF33A29056E93000862CE /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				41ACBA5B290B1E9D00BDF9D0 /* NewsTag */,
 				41B4113E2909D316007BEB57 /* NewsCollection */,
 				417CF33B29057F0F000862CE /* DailyPlate */,
 			);
@@ -288,6 +302,7 @@
 		419F8545290AE6F800D81ED2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				41ACBA64290B265E00BDF9D0 /* XIBView.swift */,
 				419F8546290AE72700D81ED2 /* ReusableCell.swift */,
 			);
 			path = Tools;
@@ -323,6 +338,39 @@
 				419F8550290AF12900D81ED2 /* NewsItem.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		41ACBA5B290B1E9D00BDF9D0 /* NewsTag */ = {
+			isa = PBXGroup;
+			children = (
+				41ACBA5C290B1EAE00BDF9D0 /* NewsTag.xib */,
+				41ACBA5E290B1EBA00BDF9D0 /* NewsTagView.swift */,
+			);
+			path = NewsTag;
+			sourceTree = "<group>";
+		};
+		41ACBA60290B228B00BDF9D0 /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				41ACBA61290B229B00BDF9D0 /* UIStackView+clear.swift */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
+		41ACBA66290B2F0F00BDF9D0 /* HelperTools */ = {
+			isa = PBXGroup;
+			children = (
+				41ACBA67290B2F3700BDF9D0 /* ImageLoader.swift */,
+			);
+			path = HelperTools;
+			sourceTree = "<group>";
+		};
+		41ACBA69290B323100BDF9D0 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				41ACBA6A290B323D00BDF9D0 /* UIImage+resize.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		41B4113E2909D316007BEB57 /* NewsCollection */ = {
@@ -742,6 +790,8 @@
 		41C2EFA928F33E5C005DDB5B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				41ACBA69290B323100BDF9D0 /* Image */,
+				41ACBA60290B228B00BDF9D0 /* StackView */,
 				41B4A7A328FDC14D00E553D3 /* Colors */,
 				41C2EFAA28F33E65005DDB5B /* ViewController */,
 			);
@@ -868,6 +918,7 @@
 				41F2277B28F2D85800856D7E /* LaunchScreen.storyboard in Resources */,
 				417BE81F28F2DD1D00EC1C28 /* GoogleService-Info.plist in Resources */,
 				41B4A7ED28FDD58700E553D3 /* Receipts.storyboard in Resources */,
+				41ACBA5D290B1EAE00BDF9D0 /* NewsTag.xib in Resources */,
 				41C2EFA728F33E0D005DDB5B /* Profile.storyboard in Resources */,
 				41F2277828F2D85800856D7E /* Images.xcassets in Resources */,
 				417CF34029057F75000862CE /* DailyPlate.xib in Resources */,
@@ -961,6 +1012,8 @@
 				41B4A7F928FDD6AE00E553D3 /* FitnessView+Output.swift in Sources */,
 				41C2EF7528F2FE4D005DDB5B /* AppCoordinator.swift in Sources */,
 				41B4A7CD28FDD26200E553D3 /* FitnessModel+Lifecycle.swift in Sources */,
+				41ACBA62290B229B00BDF9D0 /* UIStackView+clear.swift in Sources */,
+				41ACBA65290B265E00BDF9D0 /* XIBView.swift in Sources */,
 				4194EBFA29088392006B096F /* PlateProtocol.swift in Sources */,
 				4163328E2901EB9600A1A12B /* Link.swift in Sources */,
 				419F8547290AE72700D81ED2 /* ReusableCell.swift in Sources */,
@@ -981,9 +1034,11 @@
 				41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */,
 				41B4A7BD28FDCFB600E553D3 /* ReceiptsModelOutput.swift in Sources */,
 				41B4A7E028FDD49200E553D3 /* ReceiptsViewProtocol.swift in Sources */,
+				41ACBA6B290B323D00BDF9D0 /* UIImage+resize.swift in Sources */,
 				41B4A7B828FDCF9600E553D3 /* ReceiptsViewModel.swift in Sources */,
 				41C2EFAC28F33E7B005DDB5B /* Controller+Storyboard.swift in Sources */,
 				41C2EF9B28F337EF005DDB5B /* ViewController.swift in Sources */,
+				41ACBA68290B2F3700BDF9D0 /* ImageLoader.swift in Sources */,
 				41B4A7D928FDD30A00E553D3 /* StatisticsModel+Lifecycle.swift in Sources */,
 				417CF33E29057F38000862CE /* DailyPlateView.swift in Sources */,
 				41C2EF8E28F31523005DDB5B /* BaseAssembly.swift in Sources */,
@@ -994,6 +1049,7 @@
 				41B4A7D528FDD2D900E553D3 /* StatisticsModelInput.swift in Sources */,
 				41B4A7C728FDD21700E553D3 /* FitnessModelInput.swift in Sources */,
 				41B4A7A528FDC15D00E553D3 /* UIColor+hex.swift in Sources */,
+				41ACBA5F290B1EBA00BDF9D0 /* NewsTagView.swift in Sources */,
 				41B4A80928FDD88C00E553D3 /* FitnessCoordinator.swift in Sources */,
 				419F84EF290ADA7C00D81ED2 /* NewsContainerView.swift in Sources */,
 				41B4A7E928FDD51200E553D3 /* FitnessView.swift in Sources */,

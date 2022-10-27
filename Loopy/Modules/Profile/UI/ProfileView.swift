@@ -17,4 +17,7 @@ class ProfileView: ViewController, ProfileViewProtocol {
     @IBOutlet weak var sleepPlateView: DailyPlateView!
     @IBOutlet weak var waterPlateView: DailyPlateView!
     
+    @IBOutlet weak var sportNewsCollectionContainer: NewsContainerView!
+    @IBOutlet weak var foodNewsCollectionContainer: NewsContainerView!
+    
 }

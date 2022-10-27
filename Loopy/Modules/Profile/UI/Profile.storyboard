@@ -134,9 +134,17 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VvL-gK-ZsL" customClass="NewsContainerView" customModule="Loopy" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="463" width="414" height="173"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VvL-gK-ZsL" customClass="NewsContainerView" customModule="Loopy" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="420.5" width="414" height="181"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="181" id="9bu-sZ-CTN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSJ-Gp-j4c" customClass="NewsContainerView" customModule="Loopy" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="617.5" width="414" height="181"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="181" id="2Ao-YV-cDX"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -144,10 +152,16 @@
                                             <constraint firstAttribute="height" constant="1000" id="13m-af-oPz"/>
                                             <constraint firstAttribute="trailing" secondItem="Lyg-0g-umm" secondAttribute="trailing" constant="20" id="8Yf-ap-Cq0"/>
                                             <constraint firstItem="AGX-zT-gaj" firstAttribute="top" secondItem="cqq-ff-msn" secondAttribute="top" constant="23" id="LMT-z6-he8"/>
+                                            <constraint firstItem="FSJ-Gp-j4c" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" id="TQp-O3-uZb"/>
                                             <constraint firstItem="DFY-fH-je2" firstAttribute="top" secondItem="cqq-ff-msn" secondAttribute="top" constant="23" id="Twd-CY-60F"/>
+                                            <constraint firstAttribute="trailing" secondItem="FSJ-Gp-j4c" secondAttribute="trailing" id="Wn6-Vp-2xs"/>
+                                            <constraint firstItem="VvL-gK-ZsL" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" id="XNv-JN-aCE"/>
+                                            <constraint firstItem="VvL-gK-ZsL" firstAttribute="top" secondItem="Lyg-0g-umm" secondAttribute="bottom" constant="30" id="Yru-iK-Ivk"/>
+                                            <constraint firstItem="FSJ-Gp-j4c" firstAttribute="top" secondItem="VvL-gK-ZsL" secondAttribute="bottom" constant="16" id="aM4-Lh-k0i"/>
                                             <constraint firstItem="Lyg-0g-umm" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" constant="20" id="gpE-Ik-lhw"/>
                                             <constraint firstItem="Lyg-0g-umm" firstAttribute="top" secondItem="DFY-fH-je2" secondAttribute="bottom" constant="30" id="m0U-ct-1pG"/>
                                             <constraint firstAttribute="trailing" secondItem="AGX-zT-gaj" secondAttribute="trailing" constant="42" id="mgL-vW-cTj"/>
+                                            <constraint firstAttribute="trailing" secondItem="VvL-gK-ZsL" secondAttribute="trailing" id="zaU-Yf-mAi"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -174,8 +188,10 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
+                        <outlet property="foodNewsCollectionContainer" destination="FSJ-Gp-j4c" id="m3l-p9-Otv"/>
                         <outlet property="foodPlateView" destination="90j-hS-vmd" id="Njg-bl-nen"/>
                         <outlet property="sleepPlateView" destination="mYU-Oo-VL4" id="okc-rX-DDZ"/>
+                        <outlet property="sportNewsCollectionContainer" destination="VvL-gK-ZsL" id="i8S-hL-CrG"/>
                         <outlet property="stepsPlateView" destination="ShQ-WO-uRh" id="odd-f6-OFm"/>
                         <outlet property="waterPlateView" destination="szI-xE-cID" id="Q6e-lg-mGo"/>
                     </connections>

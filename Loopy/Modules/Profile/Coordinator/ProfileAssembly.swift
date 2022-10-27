@@ -18,6 +18,7 @@ final class ProfileAssembly: BaseAssembly {
         view.tabBarItem = ProfileAssembly.tabBarCustomItem
         view.tabBarItem.imageInsets = .init(top: 12, left: 0, bottom: -12, right: 0)
         view.model = model
+        model.output = view
         return view
     }
     

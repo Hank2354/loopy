@@ -13,7 +13,7 @@ final class NewsContainerView: UIView {
     @UsesAutoLayout
     var titleLabel = UILabel() * {
         $0.font = .systemFont(ofSize: 21, weight: .bold)
-        $0.textColor = .white
+        $0.textColor = ColorConfig.lightLavender
         $0.text = "Новости спорта"
     }
     
@@ -32,6 +32,17 @@ final class NewsContainerView: UIView {
     
     private func generalInit() {
         configure()
+    }
+}
+
+extension NewsContainerView {
+    
+    func setTitle(_ title: String) {
+        titleLabel.text = title
+    }
+    
+    func acceptNews(_ news: [NewsItem]) {
+        newsCollection.setNews(news)
     }
 }
 

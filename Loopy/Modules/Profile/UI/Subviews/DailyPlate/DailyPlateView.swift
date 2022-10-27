@@ -7,12 +7,13 @@
 
 import UIKit
 
-@IBDesignable final class DailyPlateView: UIView {
+@IBDesignable
+final class DailyPlateView: UIView, XIBView {
+    
+    var nibName = "DailyPlate"
     
     // MARK: - Properties
     private let radiusMultipler: CGFloat = 4.218
-    private var isLoadedFromXib: Bool = false
-    
     var type: Plate?
     
     // MARK: - Subviews
@@ -38,22 +39,5 @@ import UIKit
     override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = bounds.height / radiusMultipler
-    }
-}
-
-extension DailyPlateView {
-    func xibSetup() {
-        guard !isLoadedFromXib else { return }
-        view = loadViewFromNib()
-
-        view.frame = bounds
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        addSubview(view)
-        isLoadedFromXib = true
-    }
-
-    func loadViewFromNib() -> UIView {
-        let nib = UINib(nibName: "DailyPlate", bundle: .main)
-        return nib.instantiate(withOwner: self, options: nil)[0] as! UIView
     }
 }

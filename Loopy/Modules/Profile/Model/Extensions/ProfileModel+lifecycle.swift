@@ -7,7 +7,10 @@
 
 extension ProfileViewModel {
     
-    func viewDidLoad() {}
+    func viewDidLoad() {
+        #warning("Using mock data for test news collections")
+        output?.showNews(mockData)
+    }
     
     func viewWillAppear() {}
     

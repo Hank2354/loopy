@@ -134,6 +134,10 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VvL-gK-ZsL" customClass="NewsContainerView" customModule="Loopy" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="463" width="414" height="173"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="DFY-fH-je2" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" constant="41" id="0S1-IA-aff"/>

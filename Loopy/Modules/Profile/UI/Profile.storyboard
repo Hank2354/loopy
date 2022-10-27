@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJe-W4-eTf">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJe-W4-eTf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqq-ff-msn">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="977"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-zT-gaj">
                                                 <rect key="frame" x="322" y="23" width="50" height="50"/>
@@ -57,7 +58,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-0g-umm">
-                                                <rect key="frame" x="20" y="96.5" width="374" height="294"/>
+                                                <rect key="frame" x="20" y="259" width="374" height="294"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bjh-5M-57M">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="135"/>
@@ -135,32 +136,42 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VvL-gK-ZsL" customClass="NewsContainerView" customModule="Loopy" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="420.5" width="414" height="181"/>
+                                                <rect key="frame" x="0.0" y="583" width="414" height="181"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="181" id="9bu-sZ-CTN"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSJ-Gp-j4c" customClass="NewsContainerView" customModule="Loopy" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="617.5" width="414" height="181"/>
+                                                <rect key="frame" x="0.0" y="780" width="414" height="181"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="181" id="2Ao-YV-cDX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ew-PI-rlf">
+                                                <rect key="frame" x="20" y="103" width="374" height="110"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="110" id="jzr-cE-Ykg"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="DFY-fH-je2" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" constant="41" id="0S1-IA-aff"/>
-                                            <constraint firstAttribute="height" constant="1000" id="13m-af-oPz"/>
                                             <constraint firstAttribute="trailing" secondItem="Lyg-0g-umm" secondAttribute="trailing" constant="20" id="8Yf-ap-Cq0"/>
+                                            <constraint firstItem="Lyg-0g-umm" firstAttribute="top" secondItem="8ew-PI-rlf" secondAttribute="bottom" constant="46" id="BHd-gq-KiZ"/>
                                             <constraint firstItem="AGX-zT-gaj" firstAttribute="top" secondItem="cqq-ff-msn" secondAttribute="top" constant="23" id="LMT-z6-he8"/>
+                                            <constraint firstItem="8ew-PI-rlf" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" constant="20" id="MzE-Ln-mdH"/>
                                             <constraint firstItem="FSJ-Gp-j4c" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" id="TQp-O3-uZb"/>
                                             <constraint firstItem="DFY-fH-je2" firstAttribute="top" secondItem="cqq-ff-msn" secondAttribute="top" constant="23" id="Twd-CY-60F"/>
+                                            <constraint firstAttribute="trailing" secondItem="8ew-PI-rlf" secondAttribute="trailing" constant="20" id="Vft-JA-MPV"/>
                                             <constraint firstAttribute="trailing" secondItem="FSJ-Gp-j4c" secondAttribute="trailing" id="Wn6-Vp-2xs"/>
                                             <constraint firstItem="VvL-gK-ZsL" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" id="XNv-JN-aCE"/>
+                                            <constraint firstItem="8ew-PI-rlf" firstAttribute="top" secondItem="AGX-zT-gaj" secondAttribute="bottom" constant="30" id="XRd-Ng-tJw"/>
                                             <constraint firstItem="VvL-gK-ZsL" firstAttribute="top" secondItem="Lyg-0g-umm" secondAttribute="bottom" constant="30" id="Yru-iK-Ivk"/>
                                             <constraint firstItem="FSJ-Gp-j4c" firstAttribute="top" secondItem="VvL-gK-ZsL" secondAttribute="bottom" constant="16" id="aM4-Lh-k0i"/>
                                             <constraint firstItem="Lyg-0g-umm" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" constant="20" id="gpE-Ik-lhw"/>
-                                            <constraint firstItem="Lyg-0g-umm" firstAttribute="top" secondItem="DFY-fH-je2" secondAttribute="bottom" constant="30" id="m0U-ct-1pG"/>
                                             <constraint firstAttribute="trailing" secondItem="AGX-zT-gaj" secondAttribute="trailing" constant="42" id="mgL-vW-cTj"/>
+                                            <constraint firstAttribute="bottom" secondItem="FSJ-Gp-j4c" secondAttribute="bottom" constant="16" id="nxw-8s-PFc"/>
                                             <constraint firstAttribute="trailing" secondItem="VvL-gK-ZsL" secondAttribute="trailing" id="zaU-Yf-mAi"/>
                                         </constraints>
                                     </view>
@@ -225,5 +236,8 @@
         <namedColor name="WaterBlue">
             <color red="0.27450980392156865" green="0.67450980392156867" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -9,6 +9,8 @@ import UIKit
 
 final class NewsCell: UICollectionViewCell, ReusableCell {
     
+    static var nibName = String(describing: NewsCell.self)
+    
     func configureCell() {
         backgroundColor = .green
     }

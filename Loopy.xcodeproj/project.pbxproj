@@ -27,6 +27,8 @@
 		419F8547290AE72700D81ED2 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419F8546290AE72700D81ED2 /* ReusableCell.swift */; };
 		419F8549290AE7D000D81ED2 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419F8548290AE7D000D81ED2 /* NewsCell.swift */; };
 		419F854D290AED6B00D81ED2 /* PagingCollectionViewLayout .swift in Sources */ = {isa = PBXBuildFile; fileRef = 419F854C290AED6B00D81ED2 /* PagingCollectionViewLayout .swift */; };
+		419F8551290AF12900D81ED2 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419F8550290AF12900D81ED2 /* NewsItem.swift */; };
+		419F8553290B049B00D81ED2 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 419F8552290B049B00D81ED2 /* NewsCell.xib */; };
 		41B4A79B28FDA2B400E553D3 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */; };
 		41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */; };
 		41B4A7A228FDB62A00E553D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B4A7A128FDB62A00E553D3 /* Colors.xcassets */; };
@@ -121,6 +123,8 @@
 		419F8546290AE72700D81ED2 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		419F8548290AE7D000D81ED2 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		419F854C290AED6B00D81ED2 /* PagingCollectionViewLayout .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PagingCollectionViewLayout .swift"; sourceTree = "<group>"; };
+		419F8550290AF12900D81ED2 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		419F8552290B049B00D81ED2 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		41B4A79A28FDA2B400E553D3 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		41B4A79D28FDA2C600E553D3 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
 		41B4A7A128FDB62A00E553D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -305,11 +309,28 @@
 			path = CollectionViewLayout;
 			sourceTree = "<group>";
 		};
+		419F854E290AF11700D81ED2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				419F854F290AF11D00D81ED2 /* Home */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		419F854F290AF11D00D81ED2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				419F8550290AF12900D81ED2 /* NewsItem.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		41B4113E2909D316007BEB57 /* NewsCollection */ = {
 			isa = PBXGroup;
 			children = (
 				419F84EE290ADA7C00D81ED2 /* NewsContainerView.swift */,
 				419F853D290AE25500D81ED2 /* NewsCollection.swift */,
+				419F8552290B049B00D81ED2 /* NewsCell.xib */,
 				419F8548290AE7D000D81ED2 /* NewsCell.swift */,
 				41B411412909D33B007BEB57 /* Extensions */,
 			);
@@ -593,6 +614,7 @@
 		41C2EF7628F300AA005DDB5B /* General */ = {
 			isa = PBXGroup;
 			children = (
+				419F854E290AF11700D81ED2 /* Models */,
 				419F854A290AED4C00D81ED2 /* UIComponents */,
 				419F8539290ADE6300D81ED2 /* Utils */,
 				4163328B2901EB6900A1A12B /* Helpers */,
@@ -842,6 +864,7 @@
 			files = (
 				41B4A7A228FDB62A00E553D3 /* Colors.xcassets in Resources */,
 				41B4A7EF28FDD5BD00E553D3 /* Fitness.storyboard in Resources */,
+				419F8553290B049B00D81ED2 /* NewsCell.xib in Resources */,
 				41F2277B28F2D85800856D7E /* LaunchScreen.storyboard in Resources */,
 				417BE81F28F2DD1D00EC1C28 /* GoogleService-Info.plist in Resources */,
 				41B4A7ED28FDD58700E553D3 /* Receipts.storyboard in Resources */,
@@ -953,6 +976,7 @@
 				41F2276E28F2D85400856D7E /* SceneDelegate.swift in Sources */,
 				41C2EF9428F336CD005DDB5B /* ProfileViewModel.swift in Sources */,
 				419F84F1290ADDB500D81ED2 /* UsesAutoLayout.swift in Sources */,
+				419F8551290AF12900D81ED2 /* NewsItem.swift in Sources */,
 				41B4A80128FDD75F00E553D3 /* ReceiptsAssembly.swift in Sources */,
 				41B4A79E28FDA2C600E553D3 /* TabBarAssembly.swift in Sources */,
 				41B4A7BD28FDCFB600E553D3 /* ReceiptsModelOutput.swift in Sources */,

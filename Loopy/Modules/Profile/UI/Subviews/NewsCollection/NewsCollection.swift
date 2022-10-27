@@ -29,6 +29,8 @@ final class NewsCollection: UICollectionView {
         setupView()
         cellRegistration()
         setupDelegate()
+        news = [1,2]
+        reloadData()
         
     }
 }
@@ -56,7 +58,8 @@ extension NewsCollection {
     
     
     func cellRegistration() {
-        registerReusableCell(NewsCell.self)
+        register(UINib(nibName: NewsCell.nibName, bundle: nil),
+                 forCellWithReuseIdentifier: NewsCell.reuseIdentifier)
     }
     
     func setupDelegate() {

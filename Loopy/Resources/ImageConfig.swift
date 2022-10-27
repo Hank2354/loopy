@@ -26,8 +26,21 @@ public final class ImageConfig {
 public extension ImageConfig {
     
     // MARK: - DailyIcons
-    static let water = UIImage(named: "water")!
-    static let sleep = UIImage(named: "sleep")!
-    static let steps = UIImage(named: "steps")!
-    static let food  = UIImage(named: "food")!
+    struct DailyIcons {
+        static let water = UIImage(named: "water")!
+        static let sleep = UIImage(named: "sleep")!
+        static let steps = UIImage(named: "steps")!
+        static let food  = UIImage(named: "food")!
+    }
+}
+
+public extension ImageConfig {
+    
+    // MARK: - SF Symbols
+    struct SystemIcon {
+        static var checkmark = UIImage(systemName: "checkmark")!
+        static var flame     = UIImage(systemName: "flame")!
+        static var bolt      = UIImage(systemName: "bolt")!
+        static var seal      = UIImage(systemName: "seal")!
+    }
 }

@@ -17,19 +17,22 @@ final class NewsCell: UICollectionViewCell, ReusableCell {
     static var nibName = String(describing: NewsCell.self)
     
     func configureCell(with item: NewsItem) {
-        tagStack.clear()
-        newsTitle.text = item.title
-        ImageLoader.loadImage(to: newsImageView,
-                              url: item.imageLink,
-                              options: [.backgroundColor(.darkGray),
-                                        .useLoadingIndicator(.defaultStyle, .small),
-                                        .showWithAnimating(0.4)])
-        installTags(item.tags)
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.tagStack.clear()
+            self.newsTitle.text = item.title
+            self.installTags(item.tags)
+            ImageLoader.loadImage(to: self.newsImageView,
+                                  url: item.imageLink,
+                                  options: [.backgroundColor(.darkGray),
+                                            .useLoadingIndicator(.defaultStyle, .small),
+                                            .showWithAnimating(0.4)])
+        }
     }
     
     func installTags(_ tags: [NewsTag]) {
-        let tagViews = tags.map { NewsTagView(tag: $0) }
-        tagViews.forEach { tagStack.addArrangedSubview($0) }
+            let tagViews = tags.map { NewsTagView(tag: $0) }
+            tagViews.forEach { tagStack.addArrangedSubview($0) }
     }
     
 }

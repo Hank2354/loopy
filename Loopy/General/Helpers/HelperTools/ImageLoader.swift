@@ -37,46 +37,61 @@ final class ImageLoader {
         var animDur: CGFloat?
         var closures = [imageViewPresetClosure]()
         if let options {
-            options.forEach {
-                switch $0 {
-                case .backgroundColor(let color):
-                    imageView.backgroundColor = color
-                case .alpha(let alpha):
-                    imageView.alpha = alpha
-                    closures.append { imageView in
-                        imageView.alpha = 1
-                    }
-                case .useLoadingIndicator(let indicatorStyle, let size):
-                    let colorSet = LEActivityColorSet(mainColor: ColorConfig.accentOrange,
-                                                      secondMainColor: ColorConfig.lightLavender)
-                    let loader = LEActivityIndicatorView(style: indicatorStyle,
-                                                         size: size,
-                                                         colorSet: colorSet)
-                    imageView.addSubview(loader)
-                    loader.centerXAnchor.constraint(equalTo: imageView.centerXAnchor).isActive = true
-                    loader.centerYAnchor.constraint(equalTo: imageView.centerYAnchor).isActive = true
-                    loader.showActivityIndicator()
-                    
-                    closures.append { imageView in
-                        loader.hideActivityIndicator()
-                        loader.removeFromSuperview()
-                    }
-                case .showWithAnimating(let dur):
-                    animDur = dur
+            let (_closures, dur) = handleOptions(options, for: imageView)
+            closures = _closures
+            animDur = dur
+        }
+        
+        DispatchQueue.global(qos: .background).async {
+            loadImage(url: url) { image in
+                if let animDur {
+                    UIView.transition(with: imageView,
+                                      duration: animDur,
+                                      options: [.transitionCrossDissolve, .allowUserInteraction],
+                                      animations: { imageView.image = image },
+                                      completion: nil)
+                } else { imageView.image = image }
+                
+                closures.forEach { $0(imageView) }
+            }
+        }
+    }
+    
+    private static func handleOptions(_ options: [LoaderOptions]?,
+                                      for imageView: UIImageView) -> ([imageViewPresetClosure], CGFloat?) {
+        guard let options = options else { return ([], nil) }
+        var animDur: CGFloat?
+        var closures = [imageViewPresetClosure]()
+        
+        options.forEach {
+            switch $0 {
+            case .backgroundColor(let color):
+                imageView.backgroundColor = color
+            case .alpha(let alpha):
+                imageView.alpha = alpha
+                closures.append { imageView in
+                    imageView.alpha = 1
                 }
+            case .useLoadingIndicator(let indicatorStyle, let size):
+                let colorSet = LEActivityColorSet(mainColor: ColorConfig.accentOrange,
+                                                  secondMainColor: ColorConfig.lightLavender)
+                let loader = LEActivityIndicatorView(style: indicatorStyle,
+                                                     size: size,
+                                                     colorSet: colorSet)
+                imageView.addSubview(loader)
+                loader.centerXAnchor.constraint(equalTo: imageView.centerXAnchor).isActive = true
+                loader.centerYAnchor.constraint(equalTo: imageView.centerYAnchor).isActive = true
+                loader.showActivityIndicator()
+                
+                closures.append { imageView in
+                    loader.hideActivityIndicator()
+                    loader.removeFromSuperview()
+                }
+            case .showWithAnimating(let dur):
+                animDur = dur
             }
         }
         
-        loadImage(url: url) { image in
-            if let animDur {
-                UIView.transition(with: imageView,
-                                  duration: animDur,
-                                  options: .transitionCrossDissolve,
-                                  animations: { imageView.image = image },
-                                  completion: nil)
-            } else { imageView.image = image }
-            
-            closures.forEach { $0(imageView) }
-        }
+        return (closures, animDur)
     }
 }

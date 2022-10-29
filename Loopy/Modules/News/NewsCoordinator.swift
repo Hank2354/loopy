@@ -13,14 +13,9 @@ final class NewsCoordinator: Coordinator, Coordinatable {
     
     func start(with newsItem: NewsItem) {
         let assembly = NewsAssembly()
-        let controller = assembly.configure(with: newsItem)
+        let controller = assembly.configure(with: newsItem) { [weak self] state in
+            self?.dismissFlow(state)
+        }
         router.push(controller, animated: true)
-    }
-}
-
-extension NewsCoordinator {
-    
-    @objc func hideNews() {
-        router.popModule(animated: true)
     }
 }

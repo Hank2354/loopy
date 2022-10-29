@@ -37,14 +37,27 @@ final class ProfileCoordinator: Coordinator, Coordinatable {
     }
     
     func makeFlow() -> ((NavigationFlow) -> Void) {
-        
+        let flow = { [weak self] (child: ProfileCoordinator.NavigationFlow) in
+            switch child {
+            case let .news(newsItem):
+                self?.showNewsViewer(newsItem)
+            }
+        }
+        return flow
     }
 }
 
 extension ProfileCoordinator {
     
     func showNewsViewer(_ newsItem: NewsItem) {
-        
+        let coordinator = NewsCoordinator(navigationController: router.navigationController!)
+        coordinator.dismissFlow = { [weak self] state in
+            guard state else { return }
+            self?.removeDependency(coordinator)
+            self?.router.popModule(animated: true)
+        }
+        addDependency(coordinator)
+        coordinator.start(with: newsItem)
     }
 }
 

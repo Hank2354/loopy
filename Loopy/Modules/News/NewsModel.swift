@@ -10,6 +10,8 @@ import SwiftUI
 final class NewsModel: ObservableObject {
     var newsItem: NewsItem
     
+    var dismissFlow: ((Bool) -> Void)?
+    
     init(news: NewsItem) {
         self.newsItem = news
     }

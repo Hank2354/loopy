@@ -6,16 +6,25 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct NewsView: View {
     
     @ObservedObject var newsModel: NewsModel
+    @State var isLoadingImage: Bool = false
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: 16) {
                 StickyHeader {
-                    Image(uiImage: ImageConfig.Mock.newsImage)
+                    KFImage(newsModel.newsItem.imageLink)
+                        .placeholder {
+                            Image(uiImage: ImageConfig.Placeholders.newsPlaceholder)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                        }
+                        .onFailureImage(ImageConfig.Placeholders.newsPlaceholder)
+                        .fade(duration: 0.25)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                 }

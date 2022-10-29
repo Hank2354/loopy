@@ -56,3 +56,10 @@ public extension ImageConfig {
         static let newsImage = UIImage(named: "newsImage")!
     }
 }
+
+public extension ImageConfig {
+    // MARK: - Placeholders
+    struct Placeholders {
+        static let newsPlaceholder = UIImage(named: "newsPlaceholder")!
+    }
+}

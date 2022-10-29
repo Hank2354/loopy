@@ -4,8 +4,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,20 +14,226 @@
             <objects>
                 <viewController storyboardIdentifier="ProfileView" id="Y6W-OH-hqX" customClass="ProfileView" customModule="Loopy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJe-W4-eTf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqq-ff-msn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="977"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-zT-gaj">
+                                                <rect key="frame" x="322" y="23" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Hnt-k7-bJd"/>
+                                                    <constraint firstAttribute="width" constant="50" id="lJK-3z-GRU"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="DFY-fH-je2">
+                                                <rect key="frame" x="41" y="23" width="200" height="43.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUb-2E-bkr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="154.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Аноним" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7d-yN-IZh">
+                                                        <rect key="frame" x="0.0" y="19.5" width="76" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="O9D-fr-u0g"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-0g-umm">
+                                                <rect key="frame" x="20" y="259" width="374" height="294"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bjh-5M-57M">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="135"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90j-hS-vmd" customClass="DailyPlateView" customModule="Loopy" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="175" height="135"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="135" id="5Te-8d-rbE"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="LightYellow"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="food"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                        <color key="value" name="LightOrange"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShQ-WO-uRh" customClass="DailyPlateView" customModule="Loopy" customModuleProvider="target">
+                                                                <rect key="frame" x="199" y="0.0" width="175" height="135"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="LightYellow"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="steps"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                        <color key="value" name="Lavender"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="7tP-zk-srU">
+                                                        <rect key="frame" x="0.0" y="159" width="374" height="135"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYU-Oo-VL4" customClass="DailyPlateView" customModule="Loopy" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="175" height="135"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="LightYellow"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="sleep"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                        <color key="value" name="Salat"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szI-xE-cID" customClass="DailyPlateView" customModule="Loopy" customModuleProvider="target">
+                                                                <rect key="frame" x="199" y="0.0" width="175" height="135"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="LightYellow"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="water"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                        <color key="value" name="WaterBlue"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VvL-gK-ZsL" customClass="NewsContainerView" customModule="Loopy" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="583" width="414" height="181"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="181" id="9bu-sZ-CTN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSJ-Gp-j4c" customClass="NewsContainerView" customModule="Loopy" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="780" width="414" height="181"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="181" id="2Ao-YV-cDX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ew-PI-rlf">
+                                                <rect key="frame" x="20" y="103" width="374" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="110" id="jzr-cE-Ykg"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="DFY-fH-je2" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" constant="41" id="0S1-IA-aff"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lyg-0g-umm" secondAttribute="trailing" constant="20" id="8Yf-ap-Cq0"/>
+                                            <constraint firstItem="Lyg-0g-umm" firstAttribute="top" secondItem="8ew-PI-rlf" secondAttribute="bottom" constant="46" id="BHd-gq-KiZ"/>
+                                            <constraint firstItem="AGX-zT-gaj" firstAttribute="top" secondItem="cqq-ff-msn" secondAttribute="top" constant="23" id="LMT-z6-he8"/>
+                                            <constraint firstItem="8ew-PI-rlf" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" constant="20" id="MzE-Ln-mdH"/>
+                                            <constraint firstItem="FSJ-Gp-j4c" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" id="TQp-O3-uZb"/>
+                                            <constraint firstItem="DFY-fH-je2" firstAttribute="top" secondItem="cqq-ff-msn" secondAttribute="top" constant="23" id="Twd-CY-60F"/>
+                                            <constraint firstAttribute="trailing" secondItem="8ew-PI-rlf" secondAttribute="trailing" constant="20" id="Vft-JA-MPV"/>
+                                            <constraint firstAttribute="trailing" secondItem="FSJ-Gp-j4c" secondAttribute="trailing" id="Wn6-Vp-2xs"/>
+                                            <constraint firstItem="VvL-gK-ZsL" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" id="XNv-JN-aCE"/>
+                                            <constraint firstItem="8ew-PI-rlf" firstAttribute="top" secondItem="AGX-zT-gaj" secondAttribute="bottom" constant="30" id="XRd-Ng-tJw"/>
+                                            <constraint firstItem="VvL-gK-ZsL" firstAttribute="top" secondItem="Lyg-0g-umm" secondAttribute="bottom" constant="30" id="Yru-iK-Ivk"/>
+                                            <constraint firstItem="FSJ-Gp-j4c" firstAttribute="top" secondItem="VvL-gK-ZsL" secondAttribute="bottom" constant="16" id="aM4-Lh-k0i"/>
+                                            <constraint firstItem="Lyg-0g-umm" firstAttribute="leading" secondItem="cqq-ff-msn" secondAttribute="leading" constant="20" id="gpE-Ik-lhw"/>
+                                            <constraint firstAttribute="trailing" secondItem="AGX-zT-gaj" secondAttribute="trailing" constant="42" id="mgL-vW-cTj"/>
+                                            <constraint firstAttribute="bottom" secondItem="FSJ-Gp-j4c" secondAttribute="bottom" constant="16" id="nxw-8s-PFc"/>
+                                            <constraint firstAttribute="trailing" secondItem="VvL-gK-ZsL" secondAttribute="trailing" id="zaU-Yf-mAi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cqq-ff-msn" firstAttribute="trailing" secondItem="kfu-hD-j0w" secondAttribute="trailing" id="Vty-1y-Xlr"/>
+                                    <constraint firstItem="cqq-ff-msn" firstAttribute="bottom" secondItem="kfu-hD-j0w" secondAttribute="bottom" id="gPA-b2-hij"/>
+                                    <constraint firstItem="cqq-ff-msn" firstAttribute="leading" secondItem="kfu-hD-j0w" secondAttribute="leading" id="h8S-GK-1ob"/>
+                                    <constraint firstItem="cqq-ff-msn" firstAttribute="width" secondItem="KTn-eb-5ps" secondAttribute="width" id="lzh-Dj-h5O"/>
+                                    <constraint firstItem="cqq-ff-msn" firstAttribute="top" secondItem="kfu-hD-j0w" secondAttribute="top" id="zm6-Xx-zHE"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="kfu-hD-j0w"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="KTn-eb-5ps"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="hJe-W4-eTf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Lrk-NW-WTS"/>
+                            <constraint firstAttribute="bottom" secondItem="hJe-W4-eTf" secondAttribute="bottom" id="YLZ-wj-tx8"/>
+                            <constraint firstItem="hJe-W4-eTf" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="heb-4C-EA8"/>
+                            <constraint firstItem="hJe-W4-eTf" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="meA-g8-f40"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="dailyProgressViewContainer" destination="8ew-PI-rlf" id="Pcx-oQ-hmH"/>
+                        <outlet property="foodNewsCollectionContainer" destination="FSJ-Gp-j4c" id="m3l-p9-Otv"/>
+                        <outlet property="foodPlateView" destination="90j-hS-vmd" id="Njg-bl-nen"/>
+                        <outlet property="sleepPlateView" destination="mYU-Oo-VL4" id="okc-rX-DDZ"/>
+                        <outlet property="sportNewsCollectionContainer" destination="VvL-gK-ZsL" id="i8S-hL-CrG"/>
+                        <outlet property="stepsPlateView" destination="ShQ-WO-uRh" id="odd-f6-OFm"/>
+                        <outlet property="waterPlateView" destination="szI-xE-cID" id="Q6e-lg-mGo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="62"/>
+            <point key="canvasLocation" x="128.98550724637681" y="61.607142857142854"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="food" width="14" height="14"/>
+        <image name="profileImage" width="50" height="50"/>
+        <image name="sleep" width="14" height="14"/>
+        <image name="steps" width="14" height="14"/>
+        <image name="water" width="14" height="14"/>
+        <namedColor name="Background">
+            <color red="0.070588235294117646" green="0.094117647058823528" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Lavender">
+            <color red="0.46274509803921571" green="0.4823529411764706" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightOrange">
+            <color red="1" green="0.7803921568627451" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightYellow">
+            <color red="0.99607843137254903" green="0.96470588235294119" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Salat">
+            <color red="0.15686274509803921" green="0.94509803921568625" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WaterBlue">
+            <color red="0.27450980392156865" green="0.67450980392156867" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

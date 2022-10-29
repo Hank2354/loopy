@@ -19,6 +19,7 @@ final class ProfileCoordinator: Coordinatable {
     init(tabBarController: UITabBarController) {
         self.router = Router(navigationController: UINavigationController())
         self.tabBarController = tabBarController
+        router.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     deinit {

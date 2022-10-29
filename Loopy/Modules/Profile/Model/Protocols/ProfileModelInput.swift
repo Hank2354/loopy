@@ -7,4 +7,6 @@
 
 protocol ProfileModelInput: BaseViewModel {
     
+    var output: ProfileModelOutput? { get set }
+    
 }

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DailyPlateView" customModule="Loopy" customModuleProvider="target">
+            <connections>
+                <outlet property="headerTitle" destination="tws-32-WcA" id="JcL-gn-QJi"/>
+                <outlet property="iconView" destination="Tvu-FG-M26" id="1Pj-la-6i1"/>
+                <outlet property="subtitle" destination="haZ-7T-sdQ" id="tV2-X1-zfK"/>
+                <outlet property="valueTitle" destination="wOB-Fg-V0X" id="iBL-uG-I3q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="147"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Питание" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tws-32-WcA">
+                    <rect key="frame" x="17" y="19" width="59" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" name="LightLavender"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ккал" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haZ-7T-sdQ">
+                    <rect key="frame" x="16" y="112" width="30.666666666666671" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="LightLavender"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="720" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOB-Fg-V0X">
+                    <rect key="frame" x="15.999999999999996" y="79" width="46.666666666666657" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <color key="textColor" name="LightLavender"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="Tvu-FG-M26">
+                    <rect key="frame" x="174" y="13" width="28" height="28"/>
+                    <color key="backgroundColor" name="AccentOrange"/>
+                    <color key="tintColor" name="LightLavender"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="Edo-4y-ghq"/>
+                        <constraint firstAttribute="width" constant="28" id="eWW-OE-mXV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="tws-32-WcA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="Flm-RN-Glk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="haZ-7T-sdQ" secondAttribute="bottom" constant="18" id="GgX-Hc-TLh"/>
+                <constraint firstItem="tws-32-WcA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="HJC-g3-5cd"/>
+                <constraint firstItem="wOB-Fg-V0X" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Jyw-Kz-CIH"/>
+                <constraint firstItem="haZ-7T-sdQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="atg-wh-wGP"/>
+                <constraint firstAttribute="trailing" secondItem="Tvu-FG-M26" secondAttribute="trailing" constant="13" id="i1J-xA-gqu"/>
+                <constraint firstItem="Tvu-FG-M26" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="qHg-5K-AQE"/>
+                <constraint firstItem="haZ-7T-sdQ" firstAttribute="top" secondItem="wOB-Fg-V0X" secondAttribute="bottom" constant="3" id="sa3-SM-0SZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-40.769230769230766" y="-321.6824644549763"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="food" width="14" height="14"/>
+        <namedColor name="AccentOrange">
+            <color red="1" green="0.41960784313725491" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightLavender">
+            <color red="0.93333333333333335" green="0.94117647058823528" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

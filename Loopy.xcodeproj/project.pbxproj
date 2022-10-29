@@ -10,7 +10,7 @@
 		209FFD1ADE0222B249D77C70 /* Pods_Loopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBBAC4AD92D2A274FB05D34 /* Pods_Loopy.framework */; };
 		4163328E2901EB9600A1A12B /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163328D2901EB9600A1A12B /* Link.swift */; };
 		417BE81F28F2DD1D00EC1C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */; };
-		417CF33929056A25000862CE /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CF33829056A25000862CE /* Gradients.swift */; };
+		417CF33929056A25000862CE /* UIColor+SUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CF33829056A25000862CE /* UIColor+SUIColor.swift */; };
 		417CF33E29057F38000862CE /* DailyPlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CF33D29057F38000862CE /* DailyPlateView.swift */; };
 		417CF34029057F75000862CE /* DailyPlate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417CF33F29057F75000862CE /* DailyPlate.xib */; };
 		417CF34329058178000862CE /* DailyPlate+IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CF34229058178000862CE /* DailyPlate+IBDesignable.swift */; };
@@ -111,6 +111,7 @@
 		41F0DE67290DB7730085AC41 /* NewsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0DE66290DB7730085AC41 /* NewsAssembly.swift */; };
 		41F0DE69290DC6E20085AC41 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0DE68290DC6E20085AC41 /* Coordinator.swift */; };
 		41F0DE6B290DD0B50085AC41 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0DE6A290DD0B50085AC41 /* Typealiases.swift */; };
+		41F0DE6E290DE4260085AC41 /* StickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0DE6D290DE4260085AC41 /* StickyHeader.swift */; };
 		41F2276C28F2D85400856D7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2276B28F2D85400856D7E /* AppDelegate.swift */; };
 		41F2276E28F2D85400856D7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2276D28F2D85400856D7E /* SceneDelegate.swift */; };
 		41F2277628F2D85400856D7E /* Loopy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41F2277428F2D85400856D7E /* Loopy.xcdatamodeld */; };
@@ -125,7 +126,7 @@
 		3FBA923C331C75A308F20450 /* Pods-Loopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loopy.debug.xcconfig"; path = "Target Support Files/Pods-Loopy/Pods-Loopy.debug.xcconfig"; sourceTree = "<group>"; };
 		4163328D2901EB9600A1A12B /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		417CF33829056A25000862CE /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		417CF33829056A25000862CE /* UIColor+SUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+SUIColor.swift"; sourceTree = "<group>"; };
 		417CF33D29057F38000862CE /* DailyPlateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlateView.swift; sourceTree = "<group>"; };
 		417CF33F29057F75000862CE /* DailyPlate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyPlate.xib; sourceTree = "<group>"; };
 		417CF34229058178000862CE /* DailyPlate+IBDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyPlate+IBDesignable.swift"; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 		41F0DE66290DB7730085AC41 /* NewsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAssembly.swift; sourceTree = "<group>"; };
 		41F0DE68290DC6E20085AC41 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		41F0DE6A290DD0B50085AC41 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		41F0DE6D290DE4260085AC41 /* StickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeader.swift; sourceTree = "<group>"; };
 		41F2276828F2D85400856D7E /* Loopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F2276B28F2D85400856D7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41F2276D28F2D85400856D7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 		419F854A290AED4C00D81ED2 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				41F0DE6C290DE40E0085AC41 /* SUI */,
 				419F854B290AED5300D81ED2 /* CollectionViewLayout */,
 			);
 			path = UIComponents;
@@ -456,7 +459,7 @@
 				41B4A7A428FDC15D00E553D3 /* UIColor+hex.swift */,
 				41ACBA6F290CADA400BDF9D0 /* Color+hex.swift */,
 				417CF344290582ED000862CE /* CGColor+Convert.swift */,
-				417CF33829056A25000862CE /* Gradients.swift */,
+				417CF33829056A25000862CE /* UIColor+SUIColor.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -690,12 +693,12 @@
 		41C2EF7328F2FE2C005DDB5B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				41F0DE59290DA90C0085AC41 /* News */,
 				41B4A79828FDA26F00E553D3 /* TabBar */,
 				41C2EF8228F31331005DDB5B /* Profile */,
 				41B4A7AB28FDCE4700E553D3 /* Receipts */,
 				41B4A7AC28FDCE6700E553D3 /* Fitness */,
 				41B4A7AD28FDCE7200E553D3 /* Statistics */,
+				41F0DE59290DA90C0085AC41 /* News */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -867,6 +870,14 @@
 				41F0DE5C290DA98D0085AC41 /* NewsModel.swift */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		41F0DE6C290DE40E0085AC41 /* SUI */ = {
+			isa = PBXGroup;
+			children = (
+				41F0DE6D290DE4260085AC41 /* StickyHeader.swift */,
+			);
+			path = SUI;
 			sourceTree = "<group>";
 		};
 		41F2275F28F2D85400856D7E = {
@@ -1055,7 +1066,7 @@
 				41B4A7D328FDD2BF00E553D3 /* StatisticsViewModel.swift in Sources */,
 				41F0DE69290DC6E20085AC41 /* Coordinator.swift in Sources */,
 				41B4A7AA28FDCD4E00E553D3 /* ImageConfig.swift in Sources */,
-				417CF33929056A25000862CE /* Gradients.swift in Sources */,
+				417CF33929056A25000862CE /* UIColor+SUIColor.swift in Sources */,
 				41F0DE5F290DAC2C0085AC41 /* ProfileView+NewsDelegate.swift in Sources */,
 				41B4A80728FDD86200E553D3 /* ReceiptsCoordinator.swift in Sources */,
 				41B4A7E728FDD50500E553D3 /* ReceiptsView.swift in Sources */,
@@ -1131,6 +1142,7 @@
 				41F0DE5D290DA98D0085AC41 /* NewsModel.swift in Sources */,
 				41B4A80B28FDD89A00E553D3 /* StatisticsCoordinator.swift in Sources */,
 				41B4A7CF28FDD28300E553D3 /* FitnessModel+input.swift in Sources */,
+				41F0DE6E290DE4260085AC41 /* StickyHeader.swift in Sources */,
 				41C2EF7A28F30103005DDB5B /* Coordinatable.swift in Sources */,
 				419F854D290AED6B00D81ED2 /* PagingCollectionViewLayout .swift in Sources */,
 				419F853E290AE25500D81ED2 /* NewsCollection.swift in Sources */,

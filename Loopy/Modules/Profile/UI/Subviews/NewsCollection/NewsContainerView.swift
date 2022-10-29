@@ -14,7 +14,6 @@ final class NewsContainerView: UIView {
     var titleLabel = UILabel() * {
         $0.font = .systemFont(ofSize: 21, weight: .bold)
         $0.textColor = ColorConfig.lightLavender
-        $0.text = "Новости спорта"
     }
     
     @UsesAutoLayout

@@ -11,6 +11,8 @@ final class ProfileViewModel {
     
     weak var output: ProfileModelOutput?
     
+    var dailyProgressModel = DailyProgressModel()
+    
     let mockData = [
         NewsItem(title: "Новая программа тренировок от ведущего тренера РФ",
                  text: "",

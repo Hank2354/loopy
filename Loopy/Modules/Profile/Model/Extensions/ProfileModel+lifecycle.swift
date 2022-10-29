@@ -8,8 +8,11 @@
 extension ProfileViewModel {
     
     func viewDidLoad() {
+        output?.generalConfig()
         #warning("Using mock data for test news collections")
         output?.showNews(mockData)
+        output?.configPlates()
+        output?.installDailyProgressViewFromSUI(with: dailyProgressModel)
     }
     
     func viewWillAppear() {}

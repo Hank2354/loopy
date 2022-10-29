@@ -9,4 +9,5 @@ protocol ProfileModelOutput: AnyObject {
     func generalConfig()
     func configPlates()
     func showNews(_ news: [NewsItem])
+    func installDailyProgressViewFromSUI(with model: DailyProgressModel)
 }

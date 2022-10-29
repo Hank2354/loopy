@@ -10,7 +10,6 @@ extension ProfileView {
     override func viewDidLoad() {
         super.viewDidLoad()
         model.viewDidLoad()
-        configPlates()
     }
     
     override func viewWillAppear(_ animated: Bool) {

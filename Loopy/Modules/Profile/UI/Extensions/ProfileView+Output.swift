@@ -5,6 +5,8 @@
 //  Created by Vladislav Mashkov on 09.10.2022.
 //
 
+import SwiftUI
+
 extension ProfileView: ProfileModelOutput {
     func generalConfig() {
         sportNewsCollectionContainer.setTitle("Новости спорта")
@@ -30,5 +32,17 @@ extension ProfileView: ProfileModelOutput {
         
         sportNewsCollectionContainer.acceptNews(sportNews)
         foodNewsCollectionContainer.acceptNews(foodNews)
+    }
+    
+    /// We use SwiftUI for DailyProgressView and implement method for setup SUI view to current container
+    /// For support interface building with SUI and UIKit together
+    func installDailyProgressViewFromSUI(with model: DailyProgressModel) {
+        let rootView = DailyProgressView(model: model)
+        let childController = UIHostingController(rootView: rootView)
+        childController.view.backgroundColor = .clear
+        addChild(childController)
+        childController.view.frame = dailyProgressViewContainer.bounds
+        dailyProgressViewContainer.addSubview(childController.view)
+        childController.didMove(toParent: self)
     }
 }

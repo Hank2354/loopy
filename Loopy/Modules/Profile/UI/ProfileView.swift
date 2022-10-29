@@ -9,15 +9,26 @@ import UIKit
 
 class ProfileView: ViewController, ProfileViewProtocol {
     
+    // MARK: - Properties
     var model: ProfileModelInput!
     
-    // MARK: - Plate views
+    // MARK: - Views
+    
+    // Plate views
     @IBOutlet weak var foodPlateView: DailyPlateView!
     @IBOutlet weak var stepsPlateView: DailyPlateView!
     @IBOutlet weak var sleepPlateView: DailyPlateView!
     @IBOutlet weak var waterPlateView: DailyPlateView!
     
+    // News collections
     @IBOutlet weak var sportNewsCollectionContainer: NewsContainerView!
     @IBOutlet weak var foodNewsCollectionContainer: NewsContainerView!
     
+    // Other views
+    @IBOutlet weak var dailyProgressViewContainer: UIView!
+    
+    
+    // MARK: - Methods
+    
+    // ...
 }

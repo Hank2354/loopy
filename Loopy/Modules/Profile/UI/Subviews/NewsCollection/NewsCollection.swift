@@ -11,6 +11,7 @@ final class NewsCollection: UICollectionView {
     
     // MARK: - Properties
     var news = [NewsItem]()
+    weak var newsDelegate: NewsDelegate?
     
     // MARK: - Init
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {

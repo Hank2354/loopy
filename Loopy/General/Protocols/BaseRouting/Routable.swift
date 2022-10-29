@@ -20,6 +20,9 @@ protocol Routable: Controllable {
     
     /// Set hide style for navigation bar if it available
     func hideNavigationBar(_ hideBar: Bool)
+    
+    /// Enable leftToRight swipe for controllers if navigation bar was hidden
+    func enableInteractivePopWhenHiddenNavBar()
 }
 
 extension Routable {
@@ -58,6 +61,13 @@ extension Routable {
         DispatchQueue.main.async {
             guard let navigationController = navigationController else { return }
             navigationController.setNavigationBarHidden(hideBar, animated: false)
+        }
+    }
+    
+    func enableInteractivePopWhenHiddenNavBar() {
+        DispatchQueue.main.async {
+            guard let navigationController = navigationController else { return }
+            navigationController.enableInteractivePopGestureWhenNavigationBarHidden()
         }
     }
 }

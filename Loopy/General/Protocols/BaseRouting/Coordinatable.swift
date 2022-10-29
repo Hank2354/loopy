@@ -41,7 +41,7 @@ extension Coordinatable {
 extension Coordinatable {
     
     /// Add self for observer for notification with specifed name
-    func addObserver(selector: Selector, name: NSNotification.Name?) {
+    func addObserver(selector: Selector, name: Notification.Name?) {
         notificationCenter().addObserver(self, selector: selector, name: name, object: nil)
     }
     

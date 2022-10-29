@@ -11,6 +11,9 @@ extension ProfileView: ProfileModelOutput {
     func generalConfig() {
         sportNewsCollectionContainer.setTitle("Новости спорта")
         foodNewsCollectionContainer.setTitle("Новости питания")
+        
+        sportNewsCollectionContainer.newsCollection.newsDelegate = model as! NewsDelegate
+        foodNewsCollectionContainer.newsCollection.newsDelegate = model as! NewsDelegate
     }
     
     func configPlates() {

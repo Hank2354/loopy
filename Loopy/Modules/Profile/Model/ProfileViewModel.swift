@@ -11,6 +11,8 @@ final class ProfileViewModel {
     
     weak var output: ProfileModelOutput?
     
+    var navigationFlow: ((ProfileCoordinator.NavigationFlow) -> Void)?
+    
     var dailyProgressModel = DailyProgressModel()
     
     let mockData = [

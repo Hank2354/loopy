@@ -49,6 +49,7 @@ struct NewsView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(ColorConfig.background.SUIColor)
         .edgesIgnoringSafeArea(.all)
+        .onDisappear { newsModel.dismissFlow?(true) }
     }
 }
 

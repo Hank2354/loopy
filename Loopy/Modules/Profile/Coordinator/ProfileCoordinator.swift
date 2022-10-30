@@ -51,10 +51,10 @@ extension ProfileCoordinator {
     
     func showNewsViewer(_ newsItem: NewsItem) {
         let coordinator = NewsCoordinator(navigationController: router.navigationController!)
-        coordinator.dismissFlow = { [weak self] state in
+        coordinator.dismissFlow = { [weak self, weak coordinator] state in
             guard state else { return }
-            self?.removeDependency(coordinator)
             self?.router.popModule(animated: true)
+            self?.removeDependency(coordinator)
         }
         addDependency(coordinator)
         coordinator.start(with: newsItem)

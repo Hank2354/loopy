@@ -8,6 +8,9 @@
 import UIKit
 
 protocol Routable: Controllable {
+    
+    var interactivePopManager: InteractivePopRecognizer { get }
+    
     /// Present specifed module modaly with specifed style
     func present(_ module: UIViewController?, modalPresentationStyle: UIModalPresentationStyle, animated: Bool)
     /// Push specifed module with current navigation controller
@@ -67,7 +70,7 @@ extension Routable {
     func enableInteractivePopWhenHiddenNavBar() {
         DispatchQueue.main.async {
             guard let navigationController = navigationController else { return }
-            navigationController.enableInteractivePopGestureWhenNavigationBarHidden()
+            navigationController.interactivePopGestureRecognizer?.delegate = interactivePopManager
         }
     }
 }

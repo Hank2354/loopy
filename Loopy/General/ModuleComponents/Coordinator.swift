@@ -32,10 +32,7 @@ class Coordinator {
     }
     
     func removeDependency(_ coordinator: Coordinatable?) {
-        guard
-            childCoordinators.isEmpty == false,
-            let coordinator = coordinator
-            else { return }
+        guard !childCoordinators.isEmpty, let coordinator = coordinator else { return }
         
         for (index, element) in childCoordinators.enumerated() {
             if element === coordinator {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		209FFD1ADE0222B249D77C70 /* Pods_Loopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBBAC4AD92D2A274FB05D34 /* Pods_Loopy.framework */; };
+		4155B67E2911D22400AEC407 /* UIView+touchFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155B67D2911D22400AEC407 /* UIView+touchFeedback.swift */; };
+		4155B6802911D36200AEC407 /* TouchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155B67F2911D36200AEC407 /* TouchGestureRecognizer.swift */; };
 		4163328E2901EB9600A1A12B /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163328D2901EB9600A1A12B /* Link.swift */; };
 		417BE81F28F2DD1D00EC1C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */; };
 		417CF33929056A25000862CE /* UIColor+SUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417CF33829056A25000862CE /* UIColor+SUIColor.swift */; };
@@ -123,6 +125,8 @@
 /* Begin PBXFileReference section */
 		1EBBAC4AD92D2A274FB05D34 /* Pods_Loopy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loopy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBA923C331C75A308F20450 /* Pods-Loopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loopy.debug.xcconfig"; path = "Target Support Files/Pods-Loopy/Pods-Loopy.debug.xcconfig"; sourceTree = "<group>"; };
+		4155B67D2911D22400AEC407 /* UIView+touchFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+touchFeedback.swift"; sourceTree = "<group>"; };
+		4155B67F2911D36200AEC407 /* TouchGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchGestureRecognizer.swift; sourceTree = "<group>"; };
 		4163328D2901EB9600A1A12B /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		417BE81E28F2DD1D00EC1C28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		417CF33829056A25000862CE /* UIColor+SUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+SUIColor.swift"; sourceTree = "<group>"; };
@@ -250,6 +254,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4155B67C2911D21000AEC407 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4155B67D2911D22400AEC407 /* UIView+touchFeedback.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4163328B2901EB6900A1A12B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +403,7 @@
 			children = (
 				41ACBA67290B2F3700BDF9D0 /* ImageLoader.swift */,
 				41F0DE60290DAFB70085AC41 /* InteractivePopRecognizer.swift */,
+				4155B67F2911D36200AEC407 /* TouchGestureRecognizer.swift */,
 			);
 			path = HelperTools;
 			sourceTree = "<group>";
@@ -834,6 +847,7 @@
 		41C2EFA928F33E5C005DDB5B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4155B67C2911D21000AEC407 /* View */,
 				41ACBA69290B323100BDF9D0 /* Image */,
 				41ACBA60290B228B00BDF9D0 /* StackView */,
 				41B4A7A328FDC14D00E553D3 /* Colors */,
@@ -1051,6 +1065,8 @@
 				419F853C290ADEBE00D81ED2 /* CallOnFlyOperator.swift in Sources */,
 				41C2EF9928F33728005DDB5B /* ProfileModelOutput.swift in Sources */,
 				417CF34329058178000862CE /* DailyPlate+IBDesignable.swift in Sources */,
+				4155B67E2911D22400AEC407 /* UIView+touchFeedback.swift in Sources */,
+				4155B6802911D36200AEC407 /* TouchGestureRecognizer.swift in Sources */,
 				41B4A7EB28FDD52000E553D3 /* StatisticsView.swift in Sources */,
 				41B4A7E228FDD49C00E553D3 /* FitnessViewProtocol.swift in Sources */,
 				41F0DE65290DB6BB0085AC41 /* NewsCoordinator.swift in Sources */,

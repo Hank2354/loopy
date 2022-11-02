@@ -48,7 +48,7 @@ extension NewsCollection {
     static var newFlowLayout: UICollectionViewFlowLayout {
         let layout = PagingCollectionViewLayout()
         layout.itemSize = .init(width: mainScreen.bounds.width - 48,
-                                    height: 140)
+                                    height: 170)
         layout.minimumLineSpacing = 18
         layout.sectionInset = .init(top: 0,
                                     left: (mainScreen.bounds.width - layout.itemSize.width) / 3,

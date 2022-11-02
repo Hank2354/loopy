@@ -9,27 +9,25 @@ import UIKit
 
 extension DailyPlateView {
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveLinear) {
-            self.backgroundColor = self.iconView.backgroundColor
-            self.layer.borderColor = self.iconView.backgroundColor?.cgColor
-        }
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesEnded(touches, with: event)
-        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveLinear) {
-            self.backgroundColor = .clear
-            self.layer.borderColor = ColorConfig.lightYellow.cgColor
-        }
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesCancelled(touches, with: event)
-        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveLinear) {
-            self.backgroundColor = .clear
-            self.layer.borderColor = ColorConfig.lightYellow.cgColor
+    func setupHighlight() {
+        enableTouchFeedback(enable: true) { down, view in
+            UIView.animate(withDuration: 0.6,
+                           delay: 0.0,
+                           usingSpringWithDamping: 0.5,
+                           initialSpringVelocity: 0.0,
+                           options: [.allowUserInteraction],
+                           animations: {
+                if down {
+                    view.transform = CGAffineTransform.init(scaleX: 0.95, y: 0.95)
+                    view.backgroundColor = self.iconView.backgroundColor
+                    view.layer.borderColor = self.iconView.backgroundColor?.cgColor
+                } else {
+                    view.transform = CGAffineTransform.identity
+                    view.backgroundColor = .clear
+                    view.layer.borderColor = ColorConfig.lightYellow.cgColor
+                }
+            },
+                           completion: nil)
         }
     }
 }

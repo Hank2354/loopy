@@ -11,14 +11,12 @@ final class ProfileViewModel {
     
     weak var output: ProfileModelOutput?
     
+    var navigationFlow: ((ProfileCoordinator.NavigationFlow) -> Void)?
+    
     var dailyProgressModel = DailyProgressModel()
     
     let mockData = [
-        NewsItem(title: "Новая программа тренировок от ведущего тренера РФ",
-                 text: "",
-                 type: .sport,
-                 tags: [.hot, .new],
-                 imageLink: URL(string: "https://watersidephysio.co.uk/wp-content/uploads/2015/12/cycleist-768x512.jpg")),
+        .mockItem,
         NewsItem(title: "Рецепты семейного завтрака в разных странах",
                  text: "",
                  type: .food,

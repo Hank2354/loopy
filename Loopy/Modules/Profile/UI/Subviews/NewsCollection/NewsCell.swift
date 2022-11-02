@@ -28,6 +28,16 @@ final class NewsCell: UICollectionViewCell, ReusableCell {
                                             .useLoadingIndicator(.defaultStyle, .small),
                                             .showWithAnimating(0.4)])
         }
+        
+        enableTouchFeedback(enable: true) { (down, view) in
+            UIView.animate(withDuration: 0.6,
+                           delay: 0.0,
+                           usingSpringWithDamping: 0.5,
+                           initialSpringVelocity: 0.0,
+                           options: [.allowUserInteraction],
+                           animations: { view.transform = down ? CGAffineTransform.init(scaleX: 0.95, y: 0.95) : CGAffineTransform.identity },
+                           completion: nil)
+        }
     }
     
     func installTags(_ tags: [NewsTag]) {

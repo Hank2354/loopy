@@ -43,9 +43,23 @@ public extension ImageConfig {
     
     // MARK: - SF Symbols
     struct SystemIcon {
-        static var checkmark = UIImage(systemName: "checkmark")!
-        static var flame     = UIImage(systemName: "flame")!
-        static var bolt      = UIImage(systemName: "bolt")!
-        static var seal      = UIImage(systemName: "seal")!
+        static let checkmark = UIImage(systemName: "checkmark")!
+        static let flame     = UIImage(systemName: "flame")!
+        static let bolt      = UIImage(systemName: "bolt")!
+        static let seal      = UIImage(systemName: "seal")!
+    }
+}
+
+public extension ImageConfig {
+    // MARK: - Mock
+    struct Mock {
+        static let newsImage = UIImage(named: "newsImage")!
+    }
+}
+
+public extension ImageConfig {
+    // MARK: - Placeholders
+    struct Placeholders {
+        static let newsPlaceholder = UIImage(named: "newsPlaceholder")!
     }
 }

@@ -9,9 +9,12 @@ import UIKit
 
 final class Router: Routable {
     
-    let navigationController: UINavigationController?
+    var interactivePopManager: InteractivePopRecognizer
+    
+    var navigationController: UINavigationController?
   
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        self.interactivePopManager = InteractivePopRecognizer(controller: navigationController)
     }
 }

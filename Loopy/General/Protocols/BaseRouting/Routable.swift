@@ -8,6 +8,9 @@
 import UIKit
 
 protocol Routable: Controllable {
+    
+    var interactivePopManager: InteractivePopRecognizer { get }
+    
     /// Present specifed module modaly with specifed style
     func present(_ module: UIViewController?, modalPresentationStyle: UIModalPresentationStyle, animated: Bool)
     /// Push specifed module with current navigation controller
@@ -20,6 +23,9 @@ protocol Routable: Controllable {
     
     /// Set hide style for navigation bar if it available
     func hideNavigationBar(_ hideBar: Bool)
+    
+    /// Enable leftToRight swipe for controllers if navigation bar was hidden
+    func enableInteractivePopWhenHiddenNavBar()
 }
 
 extension Routable {
@@ -58,6 +64,13 @@ extension Routable {
         DispatchQueue.main.async {
             guard let navigationController = navigationController else { return }
             navigationController.setNavigationBarHidden(hideBar, animated: false)
+        }
+    }
+    
+    func enableInteractivePopWhenHiddenNavBar() {
+        DispatchQueue.main.async {
+            guard let navigationController = navigationController else { return }
+            navigationController.interactivePopGestureRecognizer?.delegate = interactivePopManager
         }
     }
 }

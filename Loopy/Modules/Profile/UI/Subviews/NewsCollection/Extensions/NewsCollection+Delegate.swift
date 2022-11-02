@@ -10,6 +10,6 @@ import UIKit
 extension NewsCollection: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("cel")
+        newsDelegate?.didSelectNews(news[indexPath.item])
     }
 }

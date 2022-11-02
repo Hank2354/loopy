@@ -7,22 +7,14 @@
 
 import UIKit
 
-final class ReceiptsCoordinator: Coordinatable {
-    
-    var childCoordinators: [Coordinatable] = []
-   
-    private let router: Routable
+final class ReceiptsCoordinator: Coordinator, Coordinatable {
     
     private weak var tabBarController: UITabBarController?
     
     // MARK: - Init
     init(tabBarController: UITabBarController) {
-        self.router = Router(navigationController: UINavigationController())
+        super.init(navigationController: UINavigationController())
         self.tabBarController = tabBarController
-    }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self)
     }
     
     func start() {

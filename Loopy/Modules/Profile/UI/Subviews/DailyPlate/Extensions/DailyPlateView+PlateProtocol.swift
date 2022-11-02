@@ -12,6 +12,7 @@ extension DailyPlateView: PlateProtocol {
         headerTitle.text = type.header
         subtitle.text = type.suffix
         self.type = type
+        setupHighlight()
     }
     
     func setPlateValue(_ value: Float?) {

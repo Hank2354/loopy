@@ -10,5 +10,6 @@ target 'Loopy' do
   pod 'LEActivity'
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
+  pod 'Kingfisher' , '~> 7.0'
 
 end
